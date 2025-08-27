@@ -1,4 +1,4 @@
-import { NavLink, Routes, Route } from "react-router-dom";
+import { NavLink, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
 import "./App.css";
 import Home from "./Components/Home";
@@ -55,6 +55,8 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/About" element={<About />} />
+					<Route path="*" element={<Navigate to="/" replace />} />
+
 					{/* <Route path="/services" element={<Services />} />
           <Route path="/tests" element={<Tests />} />
           <Route path="/teams" element={<Teams />} />
