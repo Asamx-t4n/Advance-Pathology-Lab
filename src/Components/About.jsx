@@ -2,7 +2,7 @@ import "./About.css";
 
 const About = () => {
 	return (
-		<section className="about">
+		<section className="about container">
 			{/* Top full image */}
 			<div className="about-img"></div>
 
@@ -53,6 +53,108 @@ const About = () => {
 					<strong>Trust us to be your partners every step of the way.</strong>
 				</p>
 			</div>
+			<div className="row">
+				<div className="col-md-6 ">
+					<div className="Card">
+						<h1 className="certification">Certifications</h1>
+						<div className="certifi">
+							<div className="Certifi1"></div>
+							<div className="Certifi2"></div>
+							<div className="Certifi3"></div>
+						</div>
+					</div>
+				</div>
+				<div className="col-md-6 ">
+					<div className="Card">
+						<h1 className="certification">Ratings</h1>
+						<div className="Ratings">
+							<div className="Trust">
+								<lord-icon
+									src="https://cdn.lordicon.com/yaxbmvvh.json"
+									trigger="hover"
+									colors="primary:#242424,secondary:#f4dc9c,tertiary:#8930e8"
+									style={{ width: "50px", height: "50px" }}
+								></lord-icon>
+								<p className="Trusted-By">Trusted by 10K+</p>
+								<p className="Cutomer-Rate"> customers</p>
+							</div>
+							<div className="Rate">
+								<lord-icon
+									src="https://cdn.lordicon.com/edplgash.json"
+									trigger="hover"
+									colors="primary:#e8b730,secondary:#e3c0ac,tertiary:#918d10"
+									style={{ width: "50px", height: "50px" }}
+								></lord-icon>
+								<p className="Google-rate">4.0/5 Google </p>
+								<p className="Cutomer-Rate"> rating</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section className="container ">
+				<div className="row Vision-Motto-Mission">
+					<div className="col-md-4 ">
+						<lord-icon
+							src="https://cdn.lordicon.com/ajzwsrcs.json"
+							trigger="hover"
+							colors="primary:#f28ba8,secondary:#000000,tertiary:#913710,quaternary:#f9c9c0,quinary:#5c0e0a"
+							style={{ width: "100px ", height: "100px" }}
+							className="Mission-Icon"
+						></lord-icon>
+						<h3 className=" Mission">Our Mission</h3>
+						<p className="Mission-para">
+							Our mission is to advance healthcare by delivering reliable,
+							timely, and high-quality diagnostic services. Through a team of
+							experienced pathologists and skilled staff, we focus on providing
+							accurate results that empower medical professionals to make
+							informed decisions. We are committed to innovation, ethical
+							practices, and efficiency, ensuring that every patient receives
+							the care and attention they deserve.
+						</p>
+					</div>
+					<div className="col-md-4 ">
+						<lord-icon
+							src="https://cdn.lordicon.com/ntfnmkcn.json"
+							trigger="hover"
+							colors="primary:#d1e3fa,secondary:#916f10,tertiary:#242424,quaternary:#f9c9c0,quinary:#f24c00"
+							style={{ width: "100px ", height: "100px" }}
+							className="Vision-Icon"
+						></lord-icon>
+						<h3 className=" Vision">Our Vision</h3>
+
+						<p className="Vision-para">
+							We envision becoming a globally recognized leader in pathology by
+							upholding the highest standards in diagnostics. Through
+							innovation, advanced technology, and patient-centered care, we aim
+							to be the trusted partner for healthcare providers and improve
+							patient outcomes worldwide.
+						</p>
+					</div>
+					<div className="col-md-4 ">
+						<lord-icon
+							src="https://cdn.lordicon.com/xmoniccu.json"
+							trigger="hover"
+							colors="primary:#ffffff,secondary:#66a1ee"
+							style={{ width: "100px ", height: "100px" }}
+							className="Motto-Icon"
+						></lord-icon>
+						<h3 className=" Motto">Our Motto</h3>
+
+						<p className="Motto-para">
+							<p>
+								<strong className="ms-2">"Committed to Quality"</strong>
+							</p>
+							At Advance Pathology Lab, our motto “Committed to Quality”
+							reflects our dedication to precision, trust, and excellence in
+							every diagnostic service we provide. We believe that accuracy in
+							testing builds confidence among healthcare professionals and
+							patients, ensuring dependable results that form the foundation of
+							effective treatment.
+						</p>
+					</div>
+				</div>
+			</section>
 		</section>
 	);
 };

@@ -11,10 +11,12 @@
 	margin-left: 5rem;
 }
 
-.about-text {
+.about-text,
+.Vision-Moto {
 	padding: 2rem;
 	text-align: center;
 	background: #f8f9fa;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
 }
 
 .about-text h2 {
@@ -28,6 +30,93 @@
 	line-height: 1.6;
 	margin-bottom: 1rem;
 	padding: 1rem;
+}
+.Card {
+	background-color: #fff; /* white background */
+	padding: 1.5rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 1rem;
+	flex-wrap: wrap;
+	height: 10rem;
+}
+
+.Card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.certifi {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.Certifi1,
+.Certifi2,
+.Certifi3 {
+	height: 4rem;
+	width: 4rem;
+	object-fit: cover;
+	border: #0077b6;
+	border-radius: 50%;
+}
+.Certifi1 {
+	background: url("/Logo1.jpg") no-repeat center center/cover;
+}
+.Certifi2 {
+	background: url("/Logo2.png") no-repeat center center/cover;
+}
+.Certifi3 {
+	background: url("/Logo3.jpg") no-repeat center center/cover;
+}
+.certification {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	transition: color 0.3s;
+}
+.certification:hover {
+	text-decoration: underline goldenrod;
+	cursor: pointer;
+	color: chocolate;
+}
+.Ratings {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.Cutomer-Rate {
+	margin-top: -1rem;
+	font-size: 0.6rem;
+}
+.Google-rate,
+.Trusted-By {
+	font-size: 0.6rem;
+}
+.Vision-Motto-Mission {
+	margin-top: 3rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.Mission-Icon,
+.Vision-Icon,
+.Motto-Icon {
+	display: flex;
+	justify-content: center;
+}
+.Mission,
+.Vision,
+.Motto {
+	font-size: 1rem;
+	color: #0077b6;
+	margin-left: 4rem;
+}
+.Mission-para,
+.Vision-para,
+.Motto-para {
+	padding: 1rem;
+	border: 1px solid rgb(62, 35, 2);
 }
 @media (max-width: 768px) {
 	.about-img {

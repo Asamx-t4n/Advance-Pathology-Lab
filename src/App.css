@@ -9,6 +9,9 @@
 body {
 	font-family: Arial, sans-serif;
 }
+/* html {
+	scroll-behavior: smooth;
+} */
 
 /* Navbar */
 .navbar {
@@ -75,7 +78,7 @@ body {
 		left: 0;
 		background-color: #0077b6;
 		/* padding: 10px 0; */
-		z-index: 100;
+		z-index: 500;
 	}
 
 	.nav-menu li {

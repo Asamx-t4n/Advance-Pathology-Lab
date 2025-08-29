@@ -1,10 +1,31 @@
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Lenis from "@studio-freight/lenis";
 import "./App.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 
 const App = () => {
+	useEffect(() => {
+		requestAnimationFrame(() => {
+			const lenis = new Lenis({
+				duration: 0.5,
+				easing: (t) => t,
+				smooth: true,
+				smoothWheel: true,
+				wheelMultiplier: 1.5,
+				lerp: 0.1,
+			});
+
+			function raf(time) {
+				lenis.raf(time);
+				requestAnimationFrame(raf);
+			}
+
+			requestAnimationFrame(raf);
+		});
+	}, []);
+
 	const [isShow, setIsShow] = useState(false);
 
 	return (
