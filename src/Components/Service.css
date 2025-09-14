@@ -1,0 +1,9 @@
+.card-link {
+	text-decoration: none;
+	color: inherit; /* inherits color from parent */
+	display: block; /* makes the link cover the whole card */
+	margin-top: 1rem;
+}
+.Our-Service {
+	margin-top: 0rem;
+}

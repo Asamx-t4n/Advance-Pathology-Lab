@@ -1,0 +1,86 @@
+.Whole-Title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 800;
+}
+.Whole-Img {
+	height: 20rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Description {
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+}
+.SD-Description {
+	font-size: 0.8rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+	letter-spacing: 0.1px;
+}
+.Instruments {
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+}
+.Instruments-type {
+	margin-top: -2rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+	letter-spacing: 0.1px;
+}
+.STDescription {
+	font-size: 0.9rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+	box-shadow: 0px 4px 15px rgb(0, 0, 0, 0.1);
+}
+.Buttons-div {
+	border: 1px solid black;
+	position: sticky;
+	margin-top: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.W-Buttons {
+	background-color: rgb(4, 4, 67);
+	color: #f8f9fa;
+	border-radius: 15%;
+	width: 7rem;
+	margin: 0.3rem;
+	transition: background 0.6s, transform 0.3s ease;
+}
+.W-Buttons:hover {
+	background: #000;
+	transform: translate3d(0, -5px, 0);
+}
+.W-More-Service {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 600;
+}

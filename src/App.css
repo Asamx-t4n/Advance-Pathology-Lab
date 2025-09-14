@@ -8,25 +8,47 @@
 
 body {
 	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
 }
-/* html {
-	scroll-behavior: smooth;
-} */
+.page-content {
+	margin-top: -1.5rem;
+}
+.Marquee {
+	margin-bottom: 0rem;
+	font-size: 0.8rem;
+	font-weight: 800;
+}
 
 /* Navbar */
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #0077b6;
+	background: linear-gradient(to left, #020024, #090979, #01242b);
+	color: #f8f9fa;
 	padding: 0.8rem 1rem;
-	position: relative;
+	position: sticky;
+	top: 0; /* distance from top */
+	z-index: 1030;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.Show-nav {
+	transform: translateY(0);
+	opacity: 1;
+}
+.Hide-nav {
+	transform: translateY(-140px);
 }
 
 .nav-logo {
 	font-size: 1.5rem;
 	color: #fff;
 	font-weight: bold;
+}
+.Logo {
+	height: 5rem;
+	width: 10rem;
 }
 
 .nav-menu {
@@ -58,7 +80,58 @@ body {
 	color: #fff;
 	cursor: pointer;
 }
+/* Footer */
+.F-About-Company,
+.F-Useful-Link,
+.F-Connect-Us,
+.F-Facebook-Page {
+	font-size: 0.9rem;
+	font-weight: 800;
+	text-decoration: underline;
+}
+.F-About {
+	font-size: 0.7rem;
+	font-weight: 600;
+}
+.F-Icons {
+	gap: 1rem;
+}
+.F-Ul {
+	font-weight: 600;
+	padding-left: 1rem;
+	list-style: none;
+	cursor: pointer;
+	transition: transform 0.6s ease-in;
+}
 
+.F-Ul li {
+	transition: transform 0.3s ease-in;
+}
+
+.F-Ul li:hover {
+	transform: translateY(-5px);
+}
+.Footer {
+	margin-top: 3rem;
+	background: linear-gradient(to left, #020024, #090979, #01242b);
+	color: #f8f9fa;
+	padding: 1rem;
+}
+.F-NUM1 {
+	color: #f8f9fa;
+}
+.F-service-info-para {
+	font-size: 0.8rem;
+	margin: 0rem;
+	color: #f8f9fa;
+}
+
+.DIV1 {
+	border-right: 1px solid black;
+}
+.F-location {
+	margin: 0.5rem;
+}
 /* Responsive: mobile */
 @media screen and (max-width: 768px) {
 	.Hum {
@@ -84,6 +157,87 @@ body {
 	.nav-menu li {
 		margin: 10px 0;
 		text-align: center;
+	}
+	.F-About-Company,
+	.F-Useful-Link,
+	.F-Connect-Us,
+	.F-Facebook-Page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.9rem;
+		font-weight: 800;
+		text-decoration: underline;
+		margin-top: 1rem;
+	}
+	.F-About {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+	.F-Icons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		gap: 1rem;
+	}
+	.F-Ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-weight: 600;
+		padding-left: 1rem;
+		list-style: none;
+		cursor: pointer;
+		transition: transform 0.6s ease-in;
+	}
+
+	.F-Ul li {
+		transition: transform 0.3s ease-in;
+	}
+
+	.F-Ul li:hover {
+		transform: translateY(-5px);
+	}
+	.Footer {
+		margin-top: 3rem;
+		background-color: rgb(4, 4, 67);
+		color: #f8f9fa;
+		padding: 1rem;
+	}
+	.F-NUM1 {
+		color: #f8f9fa;
+	}
+	.F-service-info-para {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.8rem;
+		margin: 0rem;
+		color: #f8f9fa;
+	}
+	.F-location {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.F-Card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.F-NUM-DIV {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.DIV1 {
+		border-bottom: 1px solid black;
 	}
 }
 

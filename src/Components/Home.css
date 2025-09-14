@@ -1,53 +1,360 @@
-.hero {
-	height: 100vh; /* full screen */
+.HOME {
+	background: #f8f9fa;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.Home-img1,
+.Home-img2,
+.Home-img3,
+.Home-img4,
+.Home-img5,
+.Home-img6 {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	width: 100%;
-	background: url("/HomePage.png") no-repeat center center/cover;
-	position: relative;
+	height: 20rem;
+	display: block;
+	/* padding: 3rem; */
+}
+.Home-img1 {
+	background-image: url("/Homepage1.jpg");
+}
+.Home-img2 {
+	background-image: url("/Homepage2.jpg");
+}
+.Home-img3 {
+	background-image: url("/Homepage3.jpg");
+}
+.Home-img4 {
+	background-image: url("/Homepage4.jpg");
+}
+.Home-img5 {
+	background-image: url("/Homepage5.jpg");
+}
+.service-info {
+	background: #f8f9fa;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
+.service-info-head {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #333;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
-	color: #fff;
+	text-decoration: underline rgb(37, 37, 1);
 }
 
-.hero-content h1 {
-	font-size: 3rem;
-	margin-bottom: 1rem;
+.service-info-para {
+	font-size: 0.8rem;
+	color: #555;
+	margin: 0rem;
 }
 
-.hero-content p {
-	font-size: 1.2rem;
+.service-info-num {
+	color: #000;
+	font-weight: 600;
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -1rem;
+}
+.service-info-email {
+	font-size: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0rem;
+}
+.Service {
+	margin-top: 4rem;
+	border: 0.2px solid #555;
+	padding: 0.2rem;
+	box-shadow: 2px 0px 0px 1px rgb(81, 1, 1);
+}
+.Service:hover {
+	box-shadow: 4px 0px 0px 1px rgb(81, 1, 1);
+}
+.location {
+	margin-top: -2rem;
+}
+
+.Book-home-collection {
+	margin-top: 4rem;
+	background: #f8f9fa;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.Home-book1,
+.Home-book2,
+.Home-book3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.Home-book-cap {
+	font-weight: 600;
+	font-size: 0.8rem;
+	text-decoration: underline black;
+}
+.Home-book-title,
+.Uploads-Report {
+	margin-top: 2rem;
+	font-weight: 800;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Book-now {
+	margin-top: 6rem;
+}
+.Book-now-btn {
+	margin-left: 5rem;
+	background-color: rgb(4, 4, 67);
+	color: #f8f9fa;
+	border-radius: 15%;
+	transition: background 0.6s, transform 0.3s ease;
+}
+.Book-now-btn:hover {
+	background: #000;
+	transform: translate3d(0, -5px, 0);
+}
+
+.Certificate-bookHome {
+	border-right: 1px solid black;
+	background: #f8f9fa;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.Card {
+	background-color: #fff; /* white background */
+	padding: 1.5rem;
+	border-radius: 12px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+	transition: transform 0.3s, box-shadow 0.3s;
+	margin: 1rem;
+	flex-wrap: wrap;
+	height: 20rem;
+}
+
+.Card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+/* Uploads */
+.Uploads {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.UTbutton1,
+.UTbutton2,
+.UTbutton3 {
+	height: 5rem;
+	width: 5rem;
+	margin-top: 1rem;
+	transition: transform 0.3s ease;
+}
+.UTbutton1:hover,
+.UTbutton2:hover,
+.TUbutton3:hover {
+	transform: translateY(-5px);
+	transform: scale(0.9);
+}
+
+.UTbutton1-cap {
+	font-size: 0.5rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.certifi {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.Certifi1,
+.Certifi2,
+.Certifi3 {
+	height: 4rem;
+	width: 4rem;
+	object-fit: cover;
+	border: #0077b6;
+	border-radius: 50%;
+	margin-top: 1rem;
+}
+.Certifi1 {
+	background: url("/Logo1.jpg") no-repeat center center/cover;
+}
+.Certifi2 {
+	background: url("/Logo2.png") no-repeat center center/cover;
+}
+.Certifi3 {
+	background: url("/Logo3.jpg") no-repeat center center/cover;
+}
+.certification {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	transition: color 0.3s;
+}
+.certification:hover {
+	text-decoration: underline black;
+	cursor: pointer;
+	color: black;
+}
+.Ratings {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.Cutomer-Rate {
+	margin-top: -1rem;
+	font-size: 0.6rem;
+}
+.Google-rate,
+.Trusted-By {
+	font-size: 0.6rem;
+}
+.Rate {
+	margin-left: 2rem;
+}
+.Trust {
+	margin-right: 2rem;
+}
+/* SM about */
+.SM-about {
+	background: #f8f9fa;
+	margin-top: 3rem;
+}
+.SM-about-img {
+	background: url("/About.png") no-repeat center/cover;
+	width: 20rem;
+	height: 20rem;
+}
+.SM-about-para {
+	background: #f8f9fa;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+	font-weight: 300;
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+.SM-about-title {
+	text-decoration: underline black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+.Our-Service {
+	margin-top: 5rem;
+}
+.Our-Service-Title,
+.Our-Expert-Teams-Title,
+.Choose-Health-Packages-Title,
+.Why-Advance-Pathology-lab-Title,
+.Extra-Information {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: underline black;
+	font-weight: 600;
+	margin-bottom: 2rem;
+}
+.Why-Advance-Pathology-lab-Title1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 400;
 	margin-bottom: 2rem;
 }
 
-.hero-btn {
-	background: #0077b6;
-	color: white;
-	border: none;
-	padding: 12px 24px;
-	font-size: 1rem;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: background 0.3s;
+.Our-Expert-Teams,
+.Our-Expert-Teams,
+.Popular-Tests,
+.Choose-Health-Packages,
+.Why-Advance-Pathology-lab {
+	margin-top: 5rem;
 }
 
-.hero-btn:hover {
-	background: #023e8a;
+.Our-Expert-Teams-btn {
+	/* margin-left: 5rem; */
+
+	background-color: rgb(4, 4, 67);
+	color: #f8f9fa;
+	border-radius: 15%;
+	transition: background 0.6s, transform 0.3s ease;
 }
-@media screen and (max-width: 768px) {
-	.hero {
-		height: 80vh; /* full screen */
+.Our-Expert-Teams-btn:hover {
+	background: #000;
+	transform: translate3d(0, -5px, 0);
+}
+.Our-Expert-Teams-btn-div {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* BLOGS */
+.Blogs-News-Lab {
+	margin-top: 2rem;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+	.service-info {
+		margin-top: 2rem;
+		text-align: center;
+	}
+	.Home-img1,
+	.Home-img2,
+	.Home-img3,
+	.Home-img4,
+	.Home-img5,
+	.Home-img6 {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 		width: 100%;
-		background: url("/HomePage.png") no-repeat center center/cover;
-		position: relative;
+		height: 10rem;
+		display: block;
+		/* padding: 3rem; */
+	}
+	.Book-now {
+		margin-top: 2rem;
+	}
+	.SM-about-img {
+		background: url("/About.png") no-repeat center/cover;
+		width: 15rem;
+		height: 10rem;
+	}
+	.Our-Service-Title,
+	.Our-Expert-Teams-Title,
+	.Choose-Health-Packages-Title,
+	.Why-Advance-Pathology-lab-Title,
+	.Extra-Information {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: underline black;
+		font-weight: 600;
+		margin-bottom: 2rem;
+		font-size: 0.9rem;
+	}
+	.Blogs-News-Lab,
+	.Why-Advance-Pathology-lab-row {
+		margin-top: 2rem;
+		margin-left: 1rem;
 	}
 }

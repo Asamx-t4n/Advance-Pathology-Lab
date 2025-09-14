@@ -1,0 +1,52 @@
+.PopUp {
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.9); /* dark overlay */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+.Buttton-row {
+	background-color: #f8f9fa;
+	height: 10rem;
+	width: 20rem;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.4);
+}
+.TButton-cross {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	height: 2rem;
+	border: none;
+}
+.Tbutton1,
+.Tbutton2,
+.Tbutton3 {
+	height: 5rem;
+	width: 5rem;
+	transition: transform 0.3s ease;
+}
+.Tbutton1:hover,
+.Tbutton2:hover,
+.Tbutton3:hover {
+	transform: translateY(-5px);
+	transform: scale(0.9);
+}
+.Tbutton1,
+.Tbutton2 {
+	margin-right: 1rem;
+}
+.Tbutton1 {
+	margin-top: -1rem;
+}
+.Tbutton1-cap {
+	font-size: 0.5rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
