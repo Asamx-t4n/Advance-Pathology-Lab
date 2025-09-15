@@ -28,7 +28,7 @@ const App = () => {
 			}
 			scrollTimeOut = setTimeout(() => {
 				setShow(true);
-			}, 200);
+			}, 1000);
 		};
 		window.addEventListener("scroll", HandleScroll);
 		return () => {
