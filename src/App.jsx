@@ -11,7 +11,7 @@ import WholeDetails from "./Components/WholeDetails";
 const App = () => {
 	let scrollTimeOut;
 	const [show, setShow] = useState(true);
-	const [isShow, setIsShow] = useState(true);
+	const [isShow, setIsShow] = useState(false);
 	const [showPopuUp, setshowPopUp] = useState(true);
 	useEffect(() => {
 		setshowPopUp(true);
@@ -28,7 +28,7 @@ const App = () => {
 			}
 			scrollTimeOut = setTimeout(() => {
 				setShow(true);
-			}, 1000);
+			}, 500);
 		};
 		window.addEventListener("scroll", HandleScroll);
 		return () => {
@@ -51,7 +51,7 @@ const App = () => {
 
 				{/* Menu */}
 				<ul
-					className={` nav-menu ${isShow ? "nav-menu " : "mob-menu"}
+					className={` nav-menu ${isShow ? "show " : ""}
 					`}
 				>
 					<li>

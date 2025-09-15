@@ -135,7 +135,7 @@
 	background-color: #fff; /* white background */
 	padding: 1.5rem;
 	border-radius: 12px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* soft shadow */
+
 	transition: transform 0.3s, box-shadow 0.3s;
 	margin: 1rem;
 	flex-wrap: wrap;
@@ -357,4 +357,8 @@
 		margin-top: 2rem;
 		margin-left: 1rem;
 	}
+
+	/* .slick-slide {
+		width: 100% !important;
+	} */
 }

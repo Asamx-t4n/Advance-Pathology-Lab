@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { NavLink, Link, useParams } from "react-router-dom";
 import "./WholeDetails.css";
 import { Data } from "./Data";
 
@@ -12,7 +12,7 @@ const WholeDetails = () => {
 				<div className="col-md-8">
 					<div>
 						<h1 className="Whole-Title">{item.Title}</h1>
-						<div>
+						<div className="Whole-Img-div">
 							<img src={item.src} alt={item.Title} className="Whole-Img" />
 						</div>
 						<div>
@@ -76,24 +76,54 @@ const WholeDetails = () => {
 				<div className="col-md-4 sticky-top">
 					<div className="Buttons-div sticky-top">
 						<h2 className="W-More-Service">More Services</h2>
-						<Link to={`/details/${1}`}>
-							<button className="W-Buttons">Click1</button>
-						</Link>
-						<Link to={`/details/${2}`}>
-							<button className="W-Buttons">Click2</button>
-						</Link>
-						<Link to={`/details/${3}`}>
-							<button className="W-Buttons">Click3</button>
-						</Link>
-						<Link to={`/details/${4}`}>
-							<button className="W-Buttons">Click4</button>
-						</Link>
-						<Link to={`/details/${5}`}>
-							<button className="W-Buttons">Click5</button>
-						</Link>
-						<Link to={`/details/${6}`}>
-							<button className="W-Buttons">Click6</button>
-						</Link>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${1}`}
+						>
+							Clinical chemistry
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${2}`}
+						>
+							Hematology
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${3}`}
+						>
+							Histopathology
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${4}`}
+						>
+							Microbiology and Serology
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${5}`}
+						>
+							Immunology
+						</NavLink>
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to={`/details/${6}`}
+						>
+							Cytopathology
+						</NavLink>
 					</div>
 				</div>
 			</div>
