@@ -31,7 +31,14 @@
 .Home-img5 {
 	background-image: url("/Homepage5.jpg");
 }
-.service-info {
+
+.Service-Time-Img {
+	/* margin-top: 2rem; */
+	margin-left: 0rem;
+	height: 18rem;
+	width: auto;
+}
+/* .service-info {
 	background: #f8f9fa;
 	border-radius: 12px;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -80,13 +87,13 @@
 }
 .location {
 	margin-top: -2rem;
-}
-
-.Book-home-collection {
+} */
+.Book-Home-Collection {
 	margin-top: 4rem;
-	background: #f8f9fa;
-	border-radius: 12px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.Book-Home-Collection-Icon {
+	font-size: 2rem;
+	margin-top: 2rem;
 }
 .Home-book1,
 .Home-book2,
@@ -102,7 +109,8 @@
 	text-decoration: underline black;
 }
 .Home-book-title,
-.Uploads-Report {
+.Uploads-Report,
+.Certification {
 	margin-top: 2rem;
 	font-weight: 800;
 	font-size: 1rem;
@@ -164,7 +172,7 @@
 }
 .UTbutton1:hover,
 .UTbutton2:hover,
-.TUbutton3:hover {
+.button3:hover {
 	transform: translateY(-5px);
 	transform: scale(0.9);
 }
@@ -201,22 +209,18 @@
 .Certifi3 {
 	background: url("/Logo3.jpg") no-repeat center center/cover;
 }
-.certification {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 1rem;
-	transition: color 0.3s;
-}
-.certification:hover {
-	text-decoration: underline black;
-	cursor: pointer;
-	color: black;
-}
+
 .Ratings {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.Rating-Title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+	font-weight: 600;
 }
 .Cutomer-Rate {
 	margin-top: -1rem;
@@ -256,8 +260,8 @@
 	align-items: center;
 	font-weight: 600;
 }
-.Our-Service {
-	margin-top: 5rem;
+.Our-Service-Title {
+	margin-top: 3rem;
 }
 .Our-Service-Title,
 .Our-Expert-Teams-Title,
@@ -310,6 +314,19 @@
 .Blogs-News-Lab {
 	margin-top: 2rem;
 }
+.slick-prev:before,
+.slick-next:before {
+	color: blue !important;
+}
+/* THey are also imp */
+.slick-track {
+	display: flex !important;
+}
+
+.slick-slide {
+	padding: 0 11.5px !important;
+	height: inherit !important;
+}
 
 /* Make it responsive */
 @media (max-width: 768px) {
@@ -357,8 +374,19 @@
 		margin-top: 2rem;
 		margin-left: 1rem;
 	}
-
-	/* .slick-slide {
+	.Service-Time-Img {
+		margin-top: 2rem;
+		margin-left: 0rem;
+		height: 13rem;
+		width: auto;
+	}
+	/* Solution for slider slide */
+	.slick-slide {
 		width: 100% !important;
-	} */
+		padding: 0 !important; /* Remove padding so no other cards show */
+	}
+
+	.slick-list {
+		padding: 0 !important; /* Remove slick's default padding */
+	}
 }

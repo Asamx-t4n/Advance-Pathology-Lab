@@ -1,6 +1,8 @@
 import "./About.css";
 import { useState } from "react";
-
+import { GiFlyingTarget } from "react-icons/gi";
+import { GiEyeShield } from "react-icons/gi";
+import { CiSearch } from "react-icons/ci";
 const About = () => {
 	const CommonQue = [
 		{
@@ -125,12 +127,7 @@ const About = () => {
 				<div className="row">
 					<div className="col-md-6">
 						<div className="Icon-div">
-							<lord-icon
-								src="https://cdn.lordicon.com/ewmfucya.json"
-								trigger="hover"
-								colors="primary:#242424,secondary:#545454,tertiary:#ffc738,quaternary:#f9c9c0,quinary:#f24c00,senary:#ebe6ef"
-								style={{ width: "100px", height: "100px" }}
-							></lord-icon>
+							<GiFlyingTarget className="Mission-Vision-Icon" />
 						</div>
 						<div className="Our-Mission">
 							<h1 className="Our-Mission-Title">Mision</h1>
@@ -170,12 +167,7 @@ const About = () => {
 					</div>
 					<div className="col-md-6">
 						<div className="Icon-div">
-							<lord-icon
-								src="https://cdn.lordicon.com/knitbwfa.json"
-								trigger="hover"
-								colors="primary:#242424,secondary:#ffffff,tertiary:#3a3347,quaternary:#545454,quinary:#a5e830,senary:#66a1ee"
-								style={{ width: "100px", height: "100px" }}
-							></lord-icon>
+							<GiEyeShield className="Mission-Vision-Icon" />
 						</div>
 						<div className="Our-Vision">
 							<h1 className="Our-Vision-Title">Our Vision</h1>
@@ -289,13 +281,8 @@ const About = () => {
 								<p className="QUE-LIST" key={index}>
 									{Item.question}
 								</p>
-								<lord-icon
-									src="https://cdn.lordicon.com/wjyqkiew.json"
-									trigger="hover"
-									colors="primary:#4030e8,secondary:#242424"
-									style={{ width: "25px", height: "25px" }}
-									onClick={() => toggle(index)}
-								></lord-icon>
+								<CiSearch onClick={() => toggle(index)} />
+
 								{openIndex === index &&
 									Item.answer.map((ans, i) => (
 										<p className="Common-Ans" key={i}>

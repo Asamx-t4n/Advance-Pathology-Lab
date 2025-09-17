@@ -97,7 +97,7 @@ body {
 	font-weight: 600;
 }
 .F-Icons {
-	gap: 1rem;
+	gap: 3rem;
 }
 .F-Ul {
 	font-weight: 600;
@@ -140,6 +140,9 @@ body {
 	.Hum {
 		display: block;
 	}
+	/* .nav-menu.Hide {
+		display: none;
+	} */
 	.nav-menu.show {
 		opacity: 0;
 		transform: translateY(-20px);

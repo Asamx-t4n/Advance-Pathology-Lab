@@ -1,5 +1,5 @@
 import { NavLink, Routes, Route, Navigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -7,11 +7,15 @@ import Service from "./Components/Service";
 import Card from "./Components/Card";
 import PopUp from "./Components/PopUp";
 import WholeDetails from "./Components/WholeDetails";
+import { FaFacebook } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 const App = () => {
+	const menuRef = useRef();
 	let scrollTimeOut;
 	const [show, setShow] = useState(true);
-	const [isShow, setIsShow] = useState(false);
+	const [isShow, setIsShow] = useState(true);
 	const [showPopuUp, setshowPopUp] = useState(true);
 	useEffect(() => {
 		setshowPopUp(true);
@@ -38,9 +42,23 @@ const App = () => {
 			}
 		};
 	}, []);
+	useEffect(() => {
+		const handleClickOutSide = (event) => {
+			if (menuRef.current && !menuRef.current.contains(event.target)) {
+				setIsShow(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutSide);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutSide);
+		};
+	}, []);
 	return (
-		<div className=" container-fluid App">
-			<nav className={`navbar ${show ? "Show-nav" : "Hide-nav"} `}>
+		<div className=" container-fluid   App">
+			<nav
+				ref={menuRef}
+				className={`navbar ${show ? "Show-nav" : "Hide-nav"} `}
+			>
 				<div className="nav-logo">
 					<img className="Logo" src="/Advance-Pathology-Lab/A-P-L-logo.png" />
 				</div>
@@ -51,7 +69,7 @@ const App = () => {
 
 				{/* Menu */}
 				<ul
-					className={` nav-menu ${isShow ? "show " : ""}
+					className={` nav-menu ${isShow ? " " : "show"}
 					`}
 				>
 					<li>
@@ -115,24 +133,9 @@ const App = () => {
 							A State of art Pathology lab , for reliable and quality reports.
 						</p>
 						<div className="F-Icons">
-							<lord-icon
-								src="https://cdn.lordicon.com/cxauoejw.json"
-								trigger="hover"
-								colors="primary:#2516c7,secondary:#4030e8"
-								style={{ width: "30px", height: "30px" }}
-							></lord-icon>
-							<lord-icon
-								src="https://cdn.lordicon.com/vnvsnvov.json"
-								trigger="hover"
-								colors="primary:#2516c7,secondary:#4030e8"
-								style={{ width: "30px", height: "30px" }}
-							></lord-icon>
-							<lord-icon
-								src="https://cdn.lordicon.com/japmxdiq.json"
-								trigger="hover"
-								colors="primary:#e83a30,secondary:#c71f16"
-								style={{ width: "30px", height: "30px" }}
-							></lord-icon>
+							<FaFacebook className="me-2" />
+							<FaYoutube className="me-2" />
+							<FaTwitter className="me-2" />
 						</div>
 					</div>
 					<div className="col-md-3 col-sm-12 DIV1">
@@ -161,7 +164,6 @@ const App = () => {
 								<strong className="F-location">
 									<lord-icon
 										src="https://cdn.lordicon.com/onmwuuox.json"
-										trigger="hover"
 										colors="primary:#916f10,secondary:#e8b730"
 										style={{ width: "20px", height: "20px" }}
 										className="mt-3 me-1"
@@ -173,7 +175,6 @@ const App = () => {
 								<p>
 									<lord-icon
 										src="https://cdn.lordicon.com/gkggixgu.json"
-										trigger="hover"
 										colors="primary:#2516c7,secondary:#30e849"
 										style={{ width: "20px", height: "20px" }}
 										className="mt-3 me-1 ms-2"
@@ -188,7 +189,6 @@ const App = () => {
 								<span>
 									<lord-icon
 										src="https://cdn.lordicon.com/vpbspaec.json"
-										trigger="hover"
 										colors="primary:#2516c7,secondary:#30e849"
 										style={{ width: "20px", height: "20px" }}
 										className="mt-2 me-1"

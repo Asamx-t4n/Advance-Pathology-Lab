@@ -7,6 +7,17 @@ import Card from "./Card";
 import { Data, Data2, Data3, Data4 } from "./Data";
 import { PiNumberZeroBold } from "react-icons/pi";
 import { FaPlus } from "react-icons/fa6";
+import { CiLocationOn } from "react-icons/ci";
+import { IoMdCall } from "react-icons/io";
+import { MdAttachEmail } from "react-icons/md";
+import { PiTestTubeDuotone } from "react-icons/pi";
+import { FaFileUpload } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
+import { SiRescuetime } from "react-icons/si";
+import { FaHospitalAlt } from "react-icons/fa";
+import { GrDocumentTest } from "react-icons/gr";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { FaStar } from "react-icons/fa";
 
 export default function Home() {
 	var settings1 = {
@@ -72,7 +83,7 @@ export default function Home() {
 	return (
 		<div className="container HOME">
 			<div className="row">
-				<div className="col-md-9 col-sm-12">
+				<div className="col-md-8 col-sm-12">
 					<Slider {...settings1}>
 						<div>
 							<div className="Home-img1"></div>
@@ -91,85 +102,55 @@ export default function Home() {
 						</div>
 					</Slider>
 				</div>
-				<div className="col-md-3 ">
+				<div className="col-md-4 ">
 					<div className="Service">
-						<h3 className="service-info-head">Service Time</h3>
+						<img
+							src="/Advance-Pathology-Lab/Time.png"
+							alt="time-img"
+							className="Service-Time-Img"
+						/>
+
+						{/* <h3 className="service-info-head">Service Time</h3>
 						<div>
 							<p className="service-info-para">Sun-Fri ( 7:00 AM - 4:30 PM )</p>
 							<p className="service-info-para">Sat ( 7:00 AM - 2:00 PM )</p>
 						</div>
 						<p>
 							<strong className="location">
-								<lord-icon
-									src="https://cdn.lordicon.com/onmwuuox.json"
-									trigger="hover"
-									colors="primary:#916f10,secondary:#e8b730"
-									style={{ width: "20px", height: "20px" }}
-									className="mt-3 me-1"
-								></lord-icon>
+								<CiLocationOn />
 								Birtamode
 							</strong>
 						</p>
 						<div className="service-info-num ">
-							<p>
-								<lord-icon
-									src="https://cdn.lordicon.com/gkggixgu.json"
-									trigger="hover"
-									colors="primary:#2516c7,secondary:#30e849"
-									style={{ width: "20px", height: "20px" }}
-									className="mt-3 me-1"
-								></lord-icon>
-							</p>
+							<IoMdCall className="me-1" />
 							<span>023536070 , 9852628113,</span>{" "}
 							<span> 9802313984, 9817032003</span>
 						</div>
 						<div className="service-info-email">
-							<span>
-								<lord-icon
-									src="https://cdn.lordicon.com/vpbspaec.json"
-									trigger="hover"
-									colors="primary:#2516c7,secondary:#30e849"
-									style={{ width: "20px", height: "20px" }}
-									className="mt-2 me-1"
-								></lord-icon>
-							</span>
+							<MdAttachEmail className="me-3" />
 							<span>advancelab2010@gmail.com</span>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>
-			<div className="container Book-home-collection">
+			<div className="container Book-Home-Collection">
 				<div className="row">
 					<div className="col-md-4 Certificate-bookHome">
 						<div className="">
 							<div className="Home-book">
 								<h2 className="Home-book-title">Book Home Collection</h2>
 								<div className="Home-book1">
-									<lord-icon
-										src="https://cdn.lordicon.com/warimioc.json"
-										trigger="hover"
-										colors="primary:#2516c7,secondary:#242424"
-										style={{ width: "50px", height: "50px" }}
-									></lord-icon>
+									<SiRescuetime className="Book-Home-Collection-Icon" />
 									<p className="Home-book-cap">Convenient & Time Saving</p>
 								</div>
 								<div className="Home-book2">
-									<lord-icon
-										src="https://cdn.lordicon.com/fikcyfpp.json"
-										trigger="hover"
-										colors="primary:#000000,secondary:#5c0e0a"
-										style={{ width: "50px", height: "50px" }}
-									></lord-icon>
+									<FaHospitalAlt className="Book-Home-Collection-Icon" />
 									<p className="Home-book-cap">
 										Free Home Collection & Cancellation
 									</p>
 								</div>
 								<div className="Home-book3">
-									<lord-icon
-										src="https://cdn.lordicon.com/zmajywmc.json"
-										trigger="hover"
-										style={{ width: "50px", height: "50px" }}
-									></lord-icon>
+									<GrDocumentTest className="Book-Home-Collection-Icon" />
 									<p className="Home-book-cap">Online Access to Reports</p>
 								</div>
 							</div>
@@ -179,34 +160,22 @@ export default function Home() {
 						<h1 className="Uploads-Report">Your Reports</h1>
 						<div className="Uploads">
 							<button className="UTbutton1">
-								<lord-icon
-									src="https://cdn.lordicon.com/owwibima.json"
-									trigger="hover"
-									style={{ width: "30px", height: "30px" }}
-								></lord-icon>
+								<PiTestTubeDuotone />
 								<p className="UTbutton1-cap">Book a test</p>
 							</button>
 							<button className="UTbutton2">
-								<lord-icon
-									src="https://cdn.lordicon.com/sbuaiykm.json"
-									trigger="hover"
-									style={{ width: "30px", height: "30px" }}
-								></lord-icon>
+								<FaFileUpload />
 								<p className="UTbutton1-cap">Upload prescription</p>
 							</button>
 							<button className="UTbutton3">
-								<lord-icon
-									src="https://cdn.lordicon.com/hnqamtrw.json"
-									trigger="hover"
-									style={{ width: "30px", height: "30px" }}
-								></lord-icon>
+								<FaFileDownload />
 								<p className="UTbutton1-cap">Download Reports</p>
 							</button>
 						</div>
 					</div>
 					<div className="col-md-4 Certificate-bookHome">
+						<h1 className="Certification">Certifications</h1>
 						<div className="Card">
-							<h1 className="certification">Certifications</h1>
 							<div className="certifi">
 								<div className="Certifi1"></div>
 								<div className="Certifi2"></div>
@@ -250,27 +219,15 @@ export default function Home() {
 							</p>
 							<NavLink to="/Home">Read More...</NavLink>
 							<div className="Card-rate">
-								<h1 className="certification">Ratings</h1>
+								<h1 className="Rating-Title">Ratings</h1>
 								<div className="Ratings">
 									<div className="Trust">
-										<lord-icon
-											src="https://cdn.lordicon.com/yaxbmvvh.json"
-											trigger="hover"
-											colors="primary:#242424,secondary:#f4dc9c,tertiary:#8930e8"
-											style={{ width: "50px", height: "50px" }}
-											className="Rate-trust-icon"
-										></lord-icon>
+										<VscWorkspaceTrusted />
 										<p className="Trusted-By">Trusted by 10K+</p>
 										<p className="Cutomer-Rate"> customers</p>
 									</div>
 									<div className="Rate">
-										<lord-icon
-											src="https://cdn.lordicon.com/edplgash.json"
-											trigger="hover"
-											colors="primary:#e8b730,secondary:#e3c0ac,tertiary:#918d10"
-											style={{ width: "50px", height: "50px" }}
-											className="Rate-trust-icon"
-										></lord-icon>
+										<FaStar />
 										<p className="Google-rate">4.0/5 Google </p>
 										<p className="Cutomer-Rate"> rating</p>
 									</div>

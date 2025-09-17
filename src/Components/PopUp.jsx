@@ -1,5 +1,8 @@
 import "./PopUp.css";
 import { RxCross1 } from "react-icons/rx";
+import { PiTestTubeDuotone } from "react-icons/pi";
+import { FaFileUpload } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 
 const PopUp = ({ onClose }) => {
 	return (
@@ -11,27 +14,15 @@ const PopUp = ({ onClose }) => {
 				<p className="Tbutton1-cap">Important Notice</p>
 				<div className="col-12 Buttton-col">
 					<button className="Tbutton1">
-						<lord-icon
-							src="https://cdn.lordicon.com/owwibima.json"
-							trigger="hover"
-							style={{ width: "30px", height: "30px" }}
-						></lord-icon>
+						<PiTestTubeDuotone />
 						<p className="Tbutton1-cap">Book a test</p>
 					</button>
 					<button className="Tbutton2">
-						<lord-icon
-							src="https://cdn.lordicon.com/sbuaiykm.json"
-							trigger="hover"
-							style={{ width: "30px", height: "30px" }}
-						></lord-icon>
+						<FaFileUpload />
 						<p className="Tbutton1-cap">Upload prescription</p>
 					</button>
 					<button className="Tbutton3">
-						<lord-icon
-							src="https://cdn.lordicon.com/hnqamtrw.json"
-							trigger="hover"
-							style={{ width: "30px", height: "30px" }}
-						></lord-icon>
+						<FaFileDownload />
 						<p className="Tbutton1-cap">Download Reports</p>
 					</button>
 				</div>
