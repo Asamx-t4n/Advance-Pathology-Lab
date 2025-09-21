@@ -20,6 +20,7 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa";
 
 export default function Home() {
+	// ✅ Full-width single slider (Hero banner, etc.)
 	var settings1 = {
 		dots: true,
 		infinite: true,
@@ -27,24 +28,57 @@ export default function Home() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		autoplay: true,
+		adaptiveHeight: true, // good for phones
 	};
+
+	// ✅ 3 → 2 → 1 layout
 	const settings2 = {
 		dots: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToScroll: 1, // keep one-by-one scroll
 		autoplay: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1024, // laptops & tablets
+				settings: {
+					slidesToShow: 2, // 👈 change: 2 instead of repeating 3
+					slidesToScroll: 1,
+					centerMode: false,
+				},
+			},
+			{
+				breakpoint: 768, // phones
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "20px",
+				},
+			},
+			{
+				breakpoint: 480, // small phones
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "15px",
+				},
+			},
+			{
+				breakpoint: 375, // very small phones
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "10px",
 				},
 			},
 		],
 	};
+
+	// ✅ 2 → 1 layout
 	const settings3 = {
 		dots: true,
 		infinite: true,
@@ -54,14 +88,27 @@ export default function Home() {
 		autoplay: true,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 768, // phones
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "20px",
+				},
+			},
+			{
+				breakpoint: 480, // small phones
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "10px", // 👈 unified padding with above config
 				},
 			},
 		],
 	};
+
+	// ✅ 3 → 1 layout
 	const settings4 = {
 		dots: false,
 		infinite: true,
@@ -75,6 +122,17 @@ export default function Home() {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "20px",
+				},
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode: true,
+					centerPadding: "15px",
 				},
 			},
 		],
@@ -239,21 +297,24 @@ export default function Home() {
 			</div>
 			<div className="container Our-Service">
 				<div className="row">
-					<div className="col-12">
+					<div className="col-md-12">
 						<h2 className="Our-Service-Title"> Our-Service</h2>
 						<Slider {...settings2}>
 							{Data.map((item) => (
-								<Card
-									key={item.id}
-									src={item.src}
-									Title={item.Title}
-									CardDescription={item.Description}
-								/>
+								<div className="Card-div">
+									<Card
+										key={item.id}
+										src={item.src}
+										Title={item.Title}
+										CardDescription={item.Description}
+									/>
+								</div>
 							))}
 						</Slider>
-					</div>
-					<div className=" Our-Expert-Teams-btn-div">
-						<button className="Our-Expert-Teams-btn">View All</button>
+
+						<div className=" Our-Expert-Teams-btn-div">
+							<button className="Our-Expert-Teams-btn">View All</button>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -25,15 +25,17 @@ body {
 
 /* Navbar */
 .navbar {
+	height: 5rem;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: linear-gradient(to left, #020024, #090979, #01242b);
-	color: #f8f9fa;
+	background-color: #ededed;
+
 	padding: 0.8rem 1rem;
 	position: sticky;
 	top: 0; /* distance from top */
 	z-index: 1030;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
 	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .Show-nav {
@@ -50,8 +52,8 @@ body {
 	font-weight: bold;
 }
 .Logo {
-	height: 5rem;
-	width: 10rem;
+	height: 3rem;
+	width: 7rem;
 }
 
 .nav-menu {
@@ -63,7 +65,7 @@ body {
 
 .nav-menu li a {
 	text-decoration: none;
-	color: #fff;
+	color: black;
 	transition: color 0.3s;
 	display: flex;
 	justify-content: center;
@@ -116,17 +118,17 @@ body {
 }
 .Footer {
 	margin-top: 3rem;
-	background: linear-gradient(to left, #020024, #090979, #01242b);
-	color: #f8f9fa;
+	background-color: #ededed;
+	color: black;
 	padding: 1rem;
 }
 .F-NUM1 {
-	color: #f8f9fa;
+	color: black;
 }
 .F-service-info-para {
 	font-size: 0.8rem;
 	margin: 0rem;
-	color: #f8f9fa;
+	color: black;
 }
 
 .DIV1 {

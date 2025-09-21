@@ -208,7 +208,7 @@ export const Data2 = [
 		Btn: "More Details",
 	},
 	{
-		id: 1,
+		id: 2,
 		Title: "Cancer Screening Male",
 		Description: "8 Parameter",
 		SDescription: "Included",
@@ -216,7 +216,7 @@ export const Data2 = [
 		Btn: "More Details",
 	},
 	{
-		id: 1,
+		id: 3,
 		Title: "Diabetes Health Check up",
 		Description: "10 Parameter",
 		SDescription: "Included",
@@ -224,7 +224,7 @@ export const Data2 = [
 		Btn: "More Details",
 	},
 	{
-		id: 1,
+		id: 4,
 		Title: "Advance Health Check up",
 		Description: "11 Parameter",
 		SDescription: "Included",
@@ -232,7 +232,7 @@ export const Data2 = [
 		Btn: "More Details",
 	},
 	{
-		id: 1,
+		id: 5,
 		Title: "Cancer screening profile-female",
 		Description: "10 Parameter",
 		SDescription: "Included",
@@ -240,7 +240,7 @@ export const Data2 = [
 		Btn: "More Details",
 	},
 	{
-		id: 1,
+		id: 6,
 		Title: "Fever Package",
 		Description: "11 Parameter",
 		SDescription: "Included",
@@ -266,7 +266,7 @@ export const Data3 = [
 		nmc: " NMC No:169022636",
 	},
 	{
-		id: 1,
+		id: 3,
 		Title: "Dr MALA THAKUR",
 		src: "/Advance-Pathology-Lab/user.png",
 		Description: "Consultant Pathologist",
@@ -274,22 +274,22 @@ export const Data3 = [
 		nmc: "NMC NO: 16370",
 	},
 	{
-		id: 1,
+		id: 4,
 		Title: "Hari Karki",
 		src: "/Advance-Pathology-Lab/HariKarki.jpg",
 	},
 	{
-		id: 1,
+		id: 5,
 		Title: "Nabina Baniya",
 		src: "/Advance-Pathology-Lab/user.png",
 	},
 	{
-		id: 1,
+		id: 6,
 		Title: "Dipak KhadgiPradhan",
 		src: "/Advance-Pathology-Lab/user.png",
 	},
 	{
-		id: 1,
+		id: 7,
 		Title: "Sangita Chaudhary",
 		src: "/Advance-Pathology-Lab/SangitaChaudhary.jpg",
 		Description: "Consultant Pathologist",
@@ -297,7 +297,7 @@ export const Data3 = [
 		nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 8,
 		Title: "Ranjana Kharel",
 		src: "/Advance-Pathology-Lab/RanjanaKharel.jpg",
 		// Description: "Consultant Pathologist",
@@ -305,7 +305,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 9,
 		Title: "Meera Khatiwada",
 		src: "/Advance-Pathology-Lab/MeeraKhatiwada.jpg",
 		// Description: "Consultant Pathologist",
@@ -313,7 +313,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 10,
 		Title: "Pooja Khulal",
 		src: "/Advance-Pathology-Lab/PoojaKhulal.jpg",
 		// Description: "Consultant Pathologist",
@@ -321,7 +321,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 11,
 		Title: "Kaushila Nembang",
 		src: "/Advance-Pathology-Lab/KaushilyaNembangjpg.jpg",
 		// Description: "Consultant Pathologist",
@@ -329,7 +329,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 12,
 		Title: "Abhinash Subedi",
 		src: "/Advance-Pathology-Lab/AbhinashSubedi.jpg",
 		// Description: "Consultant Pathologist",
@@ -337,7 +337,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 13,
 		Title: "Nirmala Rai",
 		src: "/Advance-Pathology-Lab/NirmalaRai.jpg",
 		// Description: "Consultant Pathologist",
@@ -345,7 +345,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 15,
 		Title: "Kuljit Kaur",
 		src: "/Advance-Pathology-Lab/KuljitKaur.jpg",
 		// Description: "Consultant Pathologist",
@@ -353,7 +353,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 16,
 		Title: "Kabita Rajbanshi",
 		src: "/Advance-Pathology-Lab/KabitaRajbanshi.jpg",
 		// Description: "Consultant Pathologist",
@@ -361,7 +361,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 17,
 		Title: "Sujata Nembang",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -369,7 +369,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 18,
 		Title: "Laxman Rajbanshi",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -377,7 +377,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 19,
 		Title: "Raj Kishor Yadav",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -386,7 +386,7 @@ export const Data3 = [
 	},
 
 	{
-		id: 1,
+		id: 20,
 		Title: "Prakash Bhandari",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -394,7 +394,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 21,
 		Title: "Roshika Kharel",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -402,7 +402,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 22,
 		Title: "Najmin Khatun",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -410,7 +410,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 23,
 		Title: "Durga Rajbanshi",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -418,7 +418,7 @@ export const Data3 = [
 		// nmc: "NMC no. 2636",
 	},
 	{
-		id: 1,
+		id: 24,
 		Title: "Jeshika Ganesh",
 		src: "/Advance-Pathology-Lab/user.png",
 		// Description: "Consultant Pathologist",
@@ -427,7 +427,7 @@ export const Data3 = [
 	},
 
 	{
-		id: 1,
+		id: 25,
 		Title: "Dr. Tanchona Nembang",
 		src: "/Advance-Pathology-Lab/DrTanchonaNembang.jpg",
 		Description: "Consultant Pathologist",
@@ -435,7 +435,7 @@ export const Data3 = [
 		nmc: "NMC no 9226",
 	},
 	{
-		id: 1,
+		id: 26,
 		Title: "Bikram Guragain",
 		src: "/Advance-Pathology-Lab/BikramGuragain.jpg",
 		Description: "Medical Lab Technologist",
@@ -443,7 +443,7 @@ export const Data3 = [
 		edu: "Rajiv ghandi university banglore (RGUHS)",
 	},
 	{
-		id: 1,
+		id: 27,
 		Title: "Tej Maya Magar",
 		src: "/Advance-Pathology-Lab/TejMayaMagar.jpg",
 		// Description: "Consultant Pathologist",

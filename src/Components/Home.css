@@ -140,7 +140,6 @@
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .Card {
-	background-color: #fff; /* white background */
 	padding: 1.5rem;
 	border-radius: 12px;
 
@@ -263,6 +262,7 @@
 .Our-Service-Title {
 	margin-top: 3rem;
 }
+
 .Our-Service-Title,
 .Our-Expert-Teams-Title,
 .Choose-Health-Packages-Title,
@@ -310,22 +310,32 @@
 	align-items: center;
 }
 
+.Our-Service-Data {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+/* .Our-Service {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} */
+
 /* BLOGS */
 .Blogs-News-Lab {
 	margin-top: 2rem;
 }
+/* Swiper js */
+.Our-Service {
+	padding: 0 20px;
+}
+
+/* React slider */
 .slick-prev:before,
 .slick-next:before {
 	color: blue !important;
-}
-/* THey are also imp */
-.slick-track {
 	display: flex !important;
-}
-
-.slick-slide {
-	padding: 0 11.5px !important;
-	height: inherit !important;
 }
 
 /* Make it responsive */
@@ -334,6 +344,7 @@
 		margin-top: 2rem;
 		text-align: center;
 	}
+
 	.Home-img1,
 	.Home-img2,
 	.Home-img3,
@@ -379,14 +390,5 @@
 		margin-left: 0rem;
 		height: 13rem;
 		width: auto;
-	}
-	/* Solution for slider slide */
-	.slick-slide {
-		width: 100% !important;
-		padding: 0 !important; /* Remove padding so no other cards show */
-	}
-
-	.slick-list {
-		padding: 0 !important; /* Remove slick's default padding */
 	}
 }
