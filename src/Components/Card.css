@@ -113,8 +113,8 @@
 }
 /* MediumCard */
 .Cards.Medium {
-	height: 19rem;
-	width: 15rem;
+	height: 24rem;
+	width: 18rem;
 	border: 2px;
 	background-color: #f8f9fa;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -122,15 +122,12 @@
 .Cards.Medium .Card-img {
 	object-fit: center/cover;
 	background-repeat: no-repeat;
-	height: 10rem;
-	width: 15rem;
+	height: 14rem;
+	width: 18rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	border-bottom-right-radius: 40%;
-	border-top-left-radius: 40%;
-	box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.3); /* top-left shadow only */
 }
 .NMC {
 	display: flex;
@@ -152,11 +149,15 @@
 	align-items: center;
 	font-weight: 600;
 	font-size: 0.8rem;
-	text-decoration: underline;
-	background-color: #f8f9fa;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 	padding: 1rem;
 	transition: font-size 0.3s ease;
+}
+.Card-Date {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.7rem;
+	font-weight: 600;
 }
 /* LargeCard */
 .Cards.Large {
@@ -392,6 +393,7 @@
 		justify-content: center;
 		padding: 10px;
 		border-radius: 15%;
+		margin-left: 2rem;
 	}
 	.Card-title {
 		display: flex;
@@ -412,9 +414,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 3px;
+		padding: 5px;
 		font-size: 0.8rem;
 		font-weight: 300;
-		padding: 4px;
 	}
 }

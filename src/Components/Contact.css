@@ -1,0 +1,22 @@
+.Contact {
+	background-color: #ededed;
+	margin-top: 1rem;
+}
+.Office-Adress,
+.Office-Phone,
+.Office-Email,
+.Office-Follow {
+	font-size: 0.8rem;
+	font-weight: 800;
+}
+.Birtamode,
+.Number,
+.Email,
+.Office-Icon {
+	margin-top: -1rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.Office-Icon {
+	margin-left: 0.5rem;
+}

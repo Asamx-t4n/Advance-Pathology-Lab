@@ -1,0 +1,46 @@
+.WholeNotice {
+	margin-top: 2rem;
+	background-color: #ededed;
+}
+.WholeNotice-Img {
+	padding: 1rem;
+	height: 15rem;
+	width: 15rem;
+}
+.WholeNotice-Img-Div,
+.WholeNotice-Title,
+.WholeNotice-Date,
+.WholeNotice-Description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.WholeNotice-Title {
+	margin-top: 0.5rem;
+	font-size: 0.8rem;
+	font-weight: 800;
+}
+.WholeNotice-Date {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.WholeNotice-Description {
+	font-size: 0.7;
+	font-weight: 500;
+}
+.WholeNotice-Button-Div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.WholeNotice-Button {
+	border-radius: 25%;
+	margin-top: 1rem;
+	height: 2rem;
+	width: 20rem;
+	color: black;
+	font-size: 0.8rem;
+	font-weight: 600;
+	margin-left: 2rem;
+}

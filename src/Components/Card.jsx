@@ -40,6 +40,7 @@ const Card = ({
 	PLUS,
 	BLOGS,
 	BCAP,
+	Date,
 }) => {
 	return (
 		<div className={`Cards ${Size}`}>
@@ -56,6 +57,7 @@ const Card = ({
 			{BCAP && <p className="BCAP">{BCAP}</p>}
 			{XCAP && <p className="XCAP">{XCAP}</p>}
 			<div className="Card-title">{Title}</div>
+			<div className="Card-Date">{Date}</div>
 			{Parameter && <p className="Parameter">{Parameter}</p>}
 			{Details && (
 				<div className="Details">

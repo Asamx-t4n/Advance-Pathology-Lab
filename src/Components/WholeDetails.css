@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 2rem;
+	font-size: 1rem;
 	font-weight: 800;
 }
 .Whole-Img {
@@ -59,9 +59,17 @@
 	margin-bottom: 0rem;
 	background: #f8f9fa;
 }
+.STDescription1 {
+	font-size: 0.8rem;
+	font-weight: 600;
+	padding: 1rem;
+	margin-bottom: 0rem;
+	background: #f8f9fa;
+}
+
 .Buttons-div {
 	position: sticky;
-	margin-top: 3rem;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,29 +77,53 @@
 }
 
 .W-Buttons {
+	color: black;
 	text-decoration: none;
-	background-color: rgb(4, 4, 67);
-	color: #f8f9fa;
-	border-radius: 15%;
-	width: 12rem;
-	margin: 0.3rem;
-	transition: background 0.6s, transform 0.3s ease;
-	font-size: 0.7rem;
-	font-weight: 600;
-	display: flex;
-	justify-content: center;
-}
-.W-Buttons.active {
-	background: #000;
 	font-size: 0.8rem;
+	font-weight: 600;
+	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+
+.W-Buttons.active {
+	color: black;
+	font-size: 0.9rem;
 	font-weight: 800;
+	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
 }
-.W-Buttons:hover {
-	background: #000;
-	transform: translate3d(0, -5px, 0);
+.WholeDetails-Button {
+	border-radius: 25%;
+	margin-top: 1rem;
+	height: 2rem;
+	width: 20rem;
 }
+
 .W-More-Service {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1rem;
+	font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+	.Whole-Title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.8rem;
+		font-weight: 800;
+	}
+	.Whole-Img {
+		border-radius: 15%;
+		height: 10rem;
+		width: 15rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.WholeDetails-Button {
+		border-radius: 25%;
+		margin-top: 1rem;
+		height: 2rem;
+		width: 14rem;
+	}
 }

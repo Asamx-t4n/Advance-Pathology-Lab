@@ -10,6 +10,16 @@ import WholeDetails from "./Components/WholeDetails";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import Test from "./Components/Test";
+import WholeTest from "./Components/WholeTest";
+import Teams from "./Components/Teams";
+import News from "./Components/News";
+import WholeNews from "./Components/WholeNews";
+import Notice from "./Components/Notice";
+import WholeNotice from "./Components/WholeNotice";
+import Blogs from "./Components/Blogs";
+import FAQS from "./Components/FAQS";
+import Contact from "./Components/Contact";
 
 const App = () => {
 	const menuRef = useRef();
@@ -17,6 +27,7 @@ const App = () => {
 	const [show, setShow] = useState(true);
 	const [isShow, setIsShow] = useState(true);
 	const [showPopuUp, setshowPopUp] = useState(true);
+
 	useEffect(() => {
 		setshowPopUp(true);
 	}, []);
@@ -82,7 +93,7 @@ const App = () => {
 						<NavLink to="/service">SERVICES</NavLink>
 					</li>
 					<li>
-						<NavLink to="/tests">TESTS</NavLink>
+						<NavLink to="/Test">TESTS</NavLink>
 					</li>
 					<li>
 						<NavLink to="/teams">TEAMS</NavLink>
@@ -91,16 +102,16 @@ const App = () => {
 						<NavLink to="/news">NEWS</NavLink>
 					</li>
 					<li>
-						<NavLink to="/notices">NOTICES</NavLink>
+						<NavLink to="/notice">NOTICES</NavLink>
 					</li>
 					<li>
 						<NavLink to="/blogs">BLOGS</NavLink>
 					</li>
 					<li>
-						<NavLink to="/faq">FAQ</NavLink>
+						<NavLink to="/faqs">FAQ</NavLink>
 					</li>
 					<li>
-						<NavLink to="/contact">CONTACT</NavLink>
+						<NavLink to="/contacts">CONTACT</NavLink>
 					</li>
 				</ul>
 				<marquee className="Marquee">Commitment To Quality</marquee>
@@ -114,19 +125,20 @@ const App = () => {
 					<Route path="/Service" element={<Service />} />
 					<Route path="*" element={<Navigate to="/" replace />} />
 					<Route path="/Details/:id" element={<WholeDetails />} />
-
-					{/* <Route path="/services" element={<Services />} />
-          <Route path="/tests" element={<Tests />} />
-          <Route path="/teams" element={<Teams />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/notices" element={<Notices />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact" element={<Contact />} /> */}
+					<Route path="/Test" element={<Test />} />
+					<Route path="/Test/:id" element={<WholeTest />} />
+					<Route path="/News/:id" element={<WholeNews />} />
+					<Route path="/Notice/:id" element={<WholeNotice />} />
+					<Route path="/Teams" element={<Teams />} />
+					<Route path="/News" element={<News />} />
+					<Route path="/notice" element={<Notice />} />
+					<Route path="/blogs" element={<Blogs />} />
+					<Route path="/faqs" element={<FAQS />} />
+					<Route path="/contacts" element={<Contact />} />
 				</Routes>
 			</div>
 			<div className="container-fluid Footer">
-				<div className="row  ">
+				<div className="row ">
 					<div className="col-md-3 col-sm-12 DIV1">
 						<h3 className="F-About-Company">About Company</h3>
 						<p className="F-About">

@@ -1,0 +1,142 @@
+.WholeTest-Data {
+	margin-top: 2rem;
+	height: 15rem;
+	width: 100%;
+	background-color: #ededed;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+	color: black;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.WholeTest-Title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+.WholeTest-Price {
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	font-weight: 800;
+	color: red;
+}
+.WholeTest-QueANs {
+	background-color: #ededed;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+	margin-top: 2rem;
+}
+.WholeTest-Parameter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+.WholeTest-Que {
+	padding-left: 1rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.WholeTest-Ans {
+	font-size: 0.7rem;
+	font-weight: 400;
+}
+.WholeTest-List {
+	margin-top: -1rem;
+}
+.WholeTest-icon {
+	margin-left: -1rem;
+	cursor: pointer;
+	font-size: 1.4rem;
+	font-weight: 800;
+}
+.Ans-Wraper {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+.Ans-Wraper.open {
+	max-height: 400px;
+	opacity: 1;
+	transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+.WholeTest-Button-List {
+	margin-top: 2rem;
+	z-index: 100;
+}
+.WholeTest-Button {
+	border-radius: 25%;
+	margin-top: 1rem;
+	height: 2rem;
+	width: 20rem;
+}
+.WholeTest-Button-Link {
+	color: black;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: 600;
+	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+.WholeTest-Button-Link.active {
+	color: black;
+	font-size: 0.9rem;
+	font-weight: 800;
+	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
+.Other-Test {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+	.WholeTest-QueANs {
+		background-color: #ededed;
+		box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+		margin-top: 6rem;
+	}
+	.WholeTest-Data {
+		margin-top: 2rem;
+		height: 22rem;
+		width: 100%;
+		background-color: #ededed;
+		box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+		color: black;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+	.WholeTest-Button {
+		border-radius: 25%;
+		margin-top: 1rem;
+		height: 2rem;
+		width: 14rem;
+	}
+	.WholeTest-Button-Link {
+		color: black;
+		text-decoration: none;
+		font-size: 0.7rem;
+		font-weight: 600;
+		transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+	}
+	.WholeTest-Button-Link.active {
+		color: black;
+		font-size: 0.7rem;
+		font-weight: 800;
+		transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+	}
+	.WholeTest-Title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.7rem;
+		font-weight: 800;
+	}
+}

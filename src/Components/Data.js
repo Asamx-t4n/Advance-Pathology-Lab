@@ -206,6 +206,67 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "3600",
 		Btn: "More Details",
+		LongDescription:
+			"A complete health check-up package is designed to provide a comprehensive assessment of your overall well-being. It includes a series of tests that help detect early signs of potential health issues, even before symptoms appear. Regular health check-ups enable timely diagnosis, better management of existing conditions, and preventive care to maintain a healthy lifestyle. Ideal for individuals of all ages, this package is a proactive step toward long-term health and peace of mind.",
+		Parameter: "Includes 8 Test Parameters",
+		QA: [
+			{
+				Question: "CBC",
+				Answer: ["Hb", "RBC", "WBC", "DLC", "Platelet", "MCV", "MCH", "MCHC"],
+			},
+			{
+				Question: "Kidney Profile",
+				Answer: [
+					"Blood urea",
+					"creatinine",
+					"Sodium",
+					" Potassium",
+					"Calcium",
+					"Uric acid",
+				],
+			},
+			{
+				Question: "Blood Sugar Fasting",
+				Answer: ["1"],
+			},
+			{
+				Question: "Lipid Profile",
+				Answer: [
+					"holesterol",
+					" HDL",
+					"LDL",
+					"VLDL",
+					" Triglycerides",
+					" Cholesterol/HDL Ratio",
+				],
+			},
+			{
+				Question: "Liver Function Test",
+				Answer: [
+					"Serum Protein",
+					"Albumin",
+					"Globulin",
+					"AG Ratio",
+					" Alkaline Phosphatase",
+					"SGPT",
+					"SGOT",
+					"Serum Bilirubin Total",
+					"Serum Bilirubin Direct",
+				],
+			},
+			{
+				Question: "Urine Examination",
+				Answer: ["NO Test"],
+			},
+			{
+				Question: "Stool Examination",
+				Answer: ["No test"],
+			},
+			{
+				Question: "Thyroid Stimulating Test",
+				Answer: ["No test"],
+			},
+		],
 	},
 	{
 		id: 2,
@@ -214,6 +275,42 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "6400",
 		Btn: "More Details",
+		LongDescription: " 30 years &Above (Male) No of Tests: 18",
+		Parameter: "Includes 8 Test Parameters",
+		QA: [
+			{
+				Question: "CBC",
+				Answer: ["Hb", "RBC", "WBC", "DLC", "Platelet", "MCV", "MCH", "MCHC"],
+			},
+			{
+				Question: "Thyroid Stimulating Hormone (TSH)",
+				Answer: ["No Test"],
+			},
+			{
+				Question: "Carcinoembryonic Antigen (CEA)",
+				Answer: ["No Test"],
+			},
+			{
+				Question: "Alpha Fetoprotein (AFP)",
+				Answer: ["No Test"],
+			},
+			{
+				Question: "CA 19.9",
+				Answer: [" Beta HCG"],
+			},
+			{
+				Question: "Prostate Specific Antigen (PSA) Total",
+				Answer: ["No Test"],
+			},
+			{
+				Question: "Lactate Dehrdrogenase (LDH)",
+				Answer: ["No Test"],
+			},
+			{
+				Question: "Alkaline Phosphatase (ALP)",
+				Answer: ["No Test"],
+			},
+		],
 	},
 	{
 		id: 3,
@@ -222,6 +319,75 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "5000",
 		Btn: "More Details",
+		LongDescription:
+			"Our Diabetes Health Check-Up Package is specially designed to monitor and manage blood sugar levels and related health indicators. It includes essential tests such as fasting blood sugar, HbA1c, lipid profile, kidney function, and more to provide a comprehensive overview of your diabetic health status. This package helps in early detection, tracking progression, and preventing complications associated with diabetes, supporting better treatment outcomes and overall well-being.Patient Preparation. Overnight fasting 8-12 hours.",
+		Parameter: "Includes 10 Test Parameters",
+		QA: [
+			{
+				Question: "CBC (8 Parameters)",
+				Answer: ["Hb", "RBC", "WBC", "DLC", "Platelet", "MCV", "MCH", "MCHC"],
+			},
+			{
+				Question: "Kidney Profile (6 Parameters)",
+				Answer: [
+					"Blood urea",
+					"Creatinine",
+					"Sodium",
+					"Potassium",
+					"Calcium",
+					"Uric acid",
+				],
+			},
+			{
+				Question: "Blood Sugar",
+				Answer: ["Fasting", "Post Prandial"],
+			},
+			{
+				Question: "Glycosylated Hemoglobin (HbA1c)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Lipid Profile (6 Parameters)",
+				Answer: [
+					"Total Cholesterol",
+					"HDL",
+					"LDL",
+					"VLDL",
+					"Triglycerides",
+					"Cholesterol/HDL Ratio",
+				],
+			},
+			{
+				Question: "Liver Function Test (9 Parameters)",
+				Answer: [
+					"Serum Protein",
+					"Albumin",
+					"Globulin",
+					"AG Ratio",
+					"Alkaline Phosphatase",
+					"SGPT",
+					"SGOT",
+					"Serum Bilirubin Total",
+					"Serum Bilirubin Direct",
+				],
+			},
+			{
+				Question: "Urine Examination",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Urine Microalbumin",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Stool Examination",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Thyroid Stimulating Test",
+				Answer: ["No Tests available"],
+			},
+		],
 	},
 	{
 		id: 4,
@@ -230,6 +396,97 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "8900",
 		Btn: "More Details",
+		LongDescription:
+			"Our Advanced Health Check-Up Package offers a thorough evaluation of your overall health, combining all essential tests from a complete body check-up with added focus on vital nutrients. This package includes assessments for Vitamin D, Vitamin B12, and Iron levels—key indicators of energy, immunity, and bone health. Ideal for those seeking a deeper understanding of their health status, it helps detect deficiencies, monitor organ function, and identify potential health risks early, empowering you to take proactive steps toward a healthier life.Patient Preparation : Overnight Fasting of 8-12 hours.",
+		Parameter: "Includes 11 Test Parameters",
+		QA: [
+			{
+				Question: "CBC (9 Parameters)",
+				Answer: [
+					"Hb",
+					"RBC",
+					"WBC",
+					"DLC",
+					"Platelet",
+					"HCT",
+					"MCV",
+					"MCH",
+					"MCHC",
+					"RDW",
+				],
+			},
+
+			{
+				Question: "Kidney Profile (6 Parameters)",
+				Answer: [
+					"Blood urea",
+					"Creatinine",
+					"Sodium",
+					"Potassium",
+					"Calcium",
+					"Uric acid",
+				],
+			},
+			{
+				Question: "Blood Sugar Fasting",
+				Answer: ["No Tests available"], // “0 parameters” :contentReference[oaicite:2]{index=2}
+			},
+			{
+				Question: "Lipid Profile (6 Parameters)",
+				Answer: [
+					"Cholesterol",
+					"HDL",
+					"LDL",
+					"VLDL",
+					"Triglycerides",
+					"Cholesterol/HDL Ratio",
+				],
+			},
+			{
+				Question: "Liver Function test (9 Parameters)",
+				Answer: [
+					"Serum Protein",
+					"Albumin",
+					"Globulin",
+					"AG Ratio",
+					"Alkaline Phosphatase",
+					"SGPT",
+					"SGOT",
+					"Serum Bilirubin Total",
+					"Serum Bilirubin Direct",
+				],
+			},
+			{
+				Question: "Urine Examination",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Stool Examination",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Thyroid Function Test (3 Parameters)",
+				Answer: ["FT3", "FT4", "TSH"],
+			},
+			{
+				Question: "Vitamin D",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Vitamin B12",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Iron Profile (5 Parameters)",
+				Answer: [
+					"Serum Iron",
+					"TIBC",
+					"Ferritin",
+					"UIBC",
+					"Transferin Saturation",
+				],
+			},
+		],
 	},
 	{
 		id: 5,
@@ -238,6 +495,60 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "7500",
 		Btn: "More Details",
+		LongDescription:
+			"Our Cancer Screening Package for Women is specially designed to detect early signs of the most common cancers affecting women. It includes vital tests blood markers for breast, cervical, and ovarian cancers, along with other essential screenings. Early detection plays a crucial role in improving treatment outcomes and long-term health. This package is recommended for women seeking proactive, preventive care—especially those with a family history of cancer or aged 30 and above.",
+		Parameter: "Includes 10 Test Parameters",
+		QA: [
+			{
+				Question: "Complete Blood Count (CBC)",
+				Answer: [
+					"Hemoglobin (Hb)",
+					"Red Blood Cell Count (RBC)",
+					"White Blood Cell Count (WBC)",
+					"Differential Leukocyte Count (DLC)",
+					"Platelet Count",
+					"Mean Corpuscular Volume (MCV)",
+					"Mean Corpuscular Hemoglobin (MCH)",
+					"Mean Corpuscular Hemoglobin Concentration (MCHC)",
+				],
+			},
+			{
+				Question: "Alpha-Fetoprotein (AFP)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Carcinoembryonic Antigen (CEA)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "CA 19.9",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "CA 125",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "CA 15-3",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Beta-Human Chorionic Gonadotropin (β-HCG)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Calcitonin",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Thyroglobulin",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Pap Smear",
+				Answer: ["No Tests available"],
+			},
+		],
 	},
 	{
 		id: 6,
@@ -246,6 +557,69 @@ export const Data2 = [
 		SDescription: "Included",
 		Price: "3680",
 		Btn: "More Details",
+		LongDescription:
+			"Our Fever Panel Package is designed to identify the root cause of fever and related symptoms quickly and accurately. It includes essential tests such as complete blood count (CBC), malaria, dengue, typhoid, and COVID-19 (if needed), along with basic infection markers. This package helps in diagnosing viral, bacterial, or parasitic infections to ensure timely and appropriate treatment. Ideal for anyone experiencing persistent or unexplained fever, it supports fast recovery and reduces the risk of complications.",
+		Parameter: "Includes 11 Test Parameters",
+		QA: [
+			{
+				Question: "Complete Blood Count (CBC)",
+				Answer: [
+					"Hemoglobin (Hb)",
+					"Red Blood Cell Count (RBC)",
+					"White Blood Cell Count (WBC)",
+					"Differential Leukocyte Count (DLC)",
+					"Platelet Count",
+					"Mean Corpuscular Volume (MCV)",
+					"Mean Corpuscular Hemoglobin (MCH)",
+					"Mean Corpuscular Hemoglobin Concentration (MCHC)",
+				],
+			},
+			{
+				Question: "ESR (Erythrocyte Sedimentation Rate)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Malaria Test",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Dengue Test",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Typhoid Test (Widal)",
+				Answer: ["No Tests available"],
+			},
+			{
+				Question: "Liver Function Test (LFT)",
+				Answer: [
+					"Serum Protein",
+					"Albumin",
+					"Globulin",
+					"AG Ratio",
+					"Alkaline Phosphatase",
+					"SGPT",
+					"SGOT",
+					"Serum Bilirubin Total",
+					"Serum Bilirubin Direct",
+				],
+			},
+			{
+				Question: "Kidney Function Test (KFT)",
+				Answer: [
+					"Blood Urea",
+					"Creatinine",
+					"Sodium",
+					"Potassium",
+					"Calcium",
+					"Uric Acid",
+				],
+			},
+			{
+				Question: "Urine Examination",
+				Answer: ["No Tests available"],
+			},
+		],
 	},
 ];
 export const Data3 = [
@@ -585,3 +959,266 @@ export const Data4 = [
 		Extra: "Free Pathology Doctor Consultation",
 	},
 ];
+// Data.js
+export const NewsData = [
+	{
+		id: 1,
+		date: "18 Jun 2024",
+		Title: "Automated Sperm Quality Analyser",
+		description:
+			"Advance Pathology Lab, a pioneer pathology laboratory at Province 1, is the first in Nepal to have ISO 15189:2022 accreditation.",
+		size: "Medium",
+		src: "/Advance-Pathology-Lab/News1.jpg",
+	},
+	{
+		id: 2,
+		date: "18 Jun 2024",
+		Title: "WHO Ref. Evaluation",
+		description:
+			"Advance Pathology Lab, a pioneer pathology laboratory at Province 1, is the first in Nepal to have ISO 15189:2022 accreditation.",
+		size: "Medium",
+		src: "/Advance-Pathology-Lab/News2.jpg",
+	},
+	{
+		id: 3,
+		date: "18 Jun 2024",
+		Title: "SQA-IO",
+		description:
+			"Advance Pathology Lab, a pioneer pathology laboratory at Province 1, is the first in Nepal to have ISO 15189:2022 accreditation.",
+		size: "Medium",
+		src: "/Advance-Pathology-Lab/News3.jpg",
+	},
+	{
+		id: 4,
+		date: "18 Aug 2024",
+		Title: "Now we are accredited by AERSSC Nepal",
+		description:
+			"Advance Pathology Lab, a pioneer pathology laboratory at Province 1, is the first in Nepal to have ISO 15189:2022 accreditation.",
+		size: "Medium",
+		src: "/Advance-Pathology-Lab/News4.jpg",
+	},
+	{
+		id: 5,
+		date: "30 Aug 2024",
+		Title: "Teej Offer 2081",
+		description:
+			"Grab this super opportunity on the occasion of Teej festival.",
+		size: "Medium",
+		src: "/Advance-Pathology-Lab/News5.jpg",
+	},
+];
+// In Data.js
+
+export const NewsQA = {
+	id: "1",
+	title: "SQA-IO",
+	faqs: [
+		{
+			question: "What should my blood sugar be?",
+			answer:
+				"For Normal Patient Fasting should be less than 100 and 140 about two hours after meal. For Diabetic Patient- The American Diabetes Association recommends a blood glucose range of 80-130 before meals and less than 180 about 2 hours after a meal. This range should place your A1c under 7.",
+		},
+		{
+			question: "What is an A1c?",
+			answer:
+				"A Hemoglobin A1c is a 2-3 month average of your blood sugars. This result gives you a good idea of how well your diabetes is being managed/controlled. The American Diabetes Association recommends an A1c of less than 7 to keep the risk of complications low.",
+		},
+		{
+			question: "Why does it matter if my blood sugar is 120 or 200?",
+			answer:
+				"It is very important to keep your blood sugar level under control. When your blood sugar level is high, it can cause damage in your veins and arteries. This damage could lead to complications later such as heart attacks, strokes, kidney disease, neuropathies, vision problems, etc.",
+		},
+		{
+			question: "What foods have carbohydrates?",
+			answer:
+				"Fruits, starchy vegetables, milk, yogurt, rice, cereals, bread and other grains all have carbs and give you important nutrients. Many snack foods, such as chips and popcorn, have carbs. Sweets, including regular soda, cakes, candy and cookies, also contain carbohydrates. Be sure to check the nutrition label on each food item to determine carbohydrate content.",
+		},
+		{
+			question: "If it is sugar free, I can eat as much as I want, right?",
+			answer:
+				"Sugar free foods can be part of a healthy meal plan in small amounts. Keep in mind though that some of these foods still have carbs (in the form of other sweeteners such as sorbitol, isomalt, and mannitol) and may affect your blood glucose levels. Many sugar free foods have calories and carbohydrates and lots of fat.",
+		},
+	],
+};
+export const NoticesData = [
+	{
+		id: 1,
+		date: "12 October 2023",
+		title: "Service",
+		description: "Important service-related update for our patients.",
+		src: "/Advance-Pathology-Lab/Notice1.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 2,
+		date: "19 October 2023",
+		title: "Dashain Notice",
+		description: "Lab will remain closed during Dashain holidays. Stay safe!",
+		src: "/Advance-Pathology-Lab/Notice2.png",
+		Size: "Medium",
+	},
+	{
+		id: 3,
+		date: "11 November 2023",
+		title: "Tihar Notice",
+		description: "Special holiday schedule announced for Tihar festival.",
+		src: "/Advance-Pathology-Lab/Notice3.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 4,
+		date: "08 March 2024",
+		title: "Happy Womens Day",
+		description: "Celebrating the strength and health of women everywhere.",
+		src: "/Advance-Pathology-Lab/Notice4.png",
+		Size: "Medium",
+	},
+	{
+		id: 5,
+		date: "25 August 2024",
+		title: "ISO 15189:2022 Accreditation",
+		description: "We are now officially accredited under ISO 15189:2022.",
+		src: "/Advance-Pathology-Lab/Notice5.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 6,
+		date: "30 August 2024",
+		title: "Teej Festival Offer",
+		description: "Exclusive health packages available this Teej festival.",
+		src: "/Advance-Pathology-Lab/Notice6.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 7,
+		date: "08 October 2024",
+		title: "Vijaya Dashami 2081 Holiday",
+		description: "Notice for Dashami holidays and service adjustments.",
+		src: "/Advance-Pathology-Lab/Notice7.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 8,
+		date: "07 November 2024",
+		title: "Tihar Holiday Notice",
+		description: "Schedule changes during the Tihar festival holidays.",
+		src: "/Advance-Pathology-Lab/Notice8.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 9,
+		date: "13 November 2024",
+		title: "Chhath Puja",
+		description: "Holiday announcement for Chhath Puja celebrations.",
+		src: "/Advance-Pathology-Lab/Notice9.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 10,
+		date: "13 December 2024",
+		title: "World Diabetic Day",
+		description: "Raising awareness about diabetes prevention and care.",
+		src: "/Advance-Pathology-Lab/Notice10.jpg",
+		Size: "Medium",
+	},
+	{
+		id: 11,
+		date: "",
+		title: "Vacancy: MLT",
+		description: "We are hiring! Apply now for the MLT position.",
+		src: "/Advance-Pathology-Lab/Notice11.jpeg",
+		Size: "Medium",
+	},
+];
+export const FAQData = {
+	Faqs: [
+		{
+			question: "What should my blood sugar be?",
+			answer: `For Normal Patient Fasting should be less than 100 and 140 about two hours after meal.
+
+For Diabetic Patient- The American Diabetes Association recommends a blood glucose range of 80-130 before meals and less than 180 about 2 hours after a meal. This range should place your A1c under 7.`,
+		},
+		{
+			question: "What is an A1c?",
+			answer: `A Hemoglobin A1c is a 2-3 month average of your blood sugars. This result gives you a good idea of how well your diabetes is being managed/controlled. The American Diabetes Association recommends an A1c of less than 7 to keep the risk of complications low.`,
+		},
+		{
+			question: "Why does it matter if my blood sugar is 120 or 200?",
+			answer: `It is very important to keep your blood sugar level under control. When your blood sugar level is high, it can cause damage in your veins and arteries. This damage could lead to complications later such as heart attacks, strokes, kidney disease, neuropathies, vision problems, etc.`,
+		},
+		{
+			question: "What foods have carbohydrates?",
+			answer: `Fruits, starchy vegetables, milk, yogurt, rice, cereals, bread and other grains all have carbs and give you important nutrients. Many snack foods, such as chips and popcorn, have carbs. Sweets, including regular soda, cakes, candy and cookies, also contain carbohydrates. Be sure to check the nutrition label on each food item to determine carbohydrate content.`,
+		},
+		{
+			question: "If it is sugar free, I can eat as much as I want, right?",
+			answer: `Sugar free foods can be part of a healthy meal plan in small amounts. Keep in mind though that some of these foods still have carbs (in the form of other sweeteners such as sorbitol, isomalt, and mannitol) and may affect your blood glucose levels. Many sugar free foods have calories and carbohydrates and lots of fat. Make sure you read the nutrition labels.`,
+		},
+		{
+			question: "Can diabetes go away?",
+			answer: `Currently no cure exists for diabetes. Type 1 diabetes is a deficiency of the pancreas to produce insulin, so insulin injections are necessary to sustain life. Type 2 diabetes is more common; the pancreas can produce some insulin, but not enough for the diet and size of the body, and/or the insulin functions poorly due to insulin resistance.
+
+Research has shown that healthy lifestyle changes such as weight loss and exercise can decrease the need for medication for type 2 diabetes. Even if symptoms diminish and blood glucose measures normal, the disease is still present.
+
+Your risk of complications of diabetes is lower if your blood glucose control is improved.`,
+		},
+		{
+			question: "What are the signs of diabetes?",
+			answer: `Many people with diabetes experience one or more symptoms, including extreme thirst or hunger, a frequent need to urinate and/or fatigue. Some lose weight without trying. Additional signs include sores that heal slowly, dry, itchy skin, loss of feeling or tingling in the feet and blurry eyesight. Some people with diabetes, however, have no symptoms at all.`,
+		},
+		{
+			question: "Do I have to take insulin?",
+			answer: `People with type 1 diabetes must take insulin to sustain life. People with type 2 diabetes either produce inadequate insulin or have insulin resistance (which means the cells have difficulty responding to insulin) or both. Treatment for type 2 usually begins with a change in diet and exercise. However, very overweight, inactive newly diagnosed people with diabetes may have such a high blood glucose level that they initially need insulin to bring blood glucose under control. Many people with type 2 diabetes can manage their diabetes with lifestyle changes and oral medications. Diabetes is a progressive disease, and in spite of a person’s best efforts, they may need insulin to control blood glucose at some time.`,
+		},
+		{
+			question: "Does diabetes cause other complications?",
+			answer: `If blood sugar is not kept in check, diabetes can lead to a number of serious complications, including heart attacks, strokes, kidney disease, blindness, blood vessel disease that can require amputations, nerve damage and impotence in men. However, a recent study conducted over a 10-year period showed that patients can reduce the risk of complications by 50% or more when their blood sugar measures as close to normal as possible.
+
+The best way to protect yourself from the serious complications of diabetes is to manage your blood glucose, blood pressure, and cholesterol and avoid smoking. Regular checkups and monitoring can help catch problems early. Managing your diabetes every day may seem hard, but it makes a huge difference in your long-term health.`,
+		},
+		{
+			question: "Can I drink alcohol?",
+			answer: `It is important to talk with your doctor about whether alcohol is safe for you. If you do choose to drink, do so occasionally and only when your blood sugar level is well controlled. Alcohol can cause low blood sugar levels soon after drinking and for up to 24 hours after drinking. It is a good idea to check your blood sugar before you drink and eat a meal or snack containing carbohydrates while drinking.`,
+		},
+		{
+			question: "Can I eat sweets and desserts?",
+			answer: `Yes! Carbohydrates in food turn into glucose in the body. It is the total amount of carbohydrates you eat that affects blood glucose levels more than the source. That means you can eat a small portion of desserts, sweets or other foods with sugar as long as you work it into your meal plan and follow your prescribed medication. Always watch your portion size and try to eat sweets that are made with healthy fats such as olive oil instead of butter or shortening and with whole grain flour instead of white flour.`,
+		},
+		{
+			question: "Should I be on a low carbohydrate diet?",
+			answer: `Low-carb diets are not recommended for people with diabetes. Carbohydrates are the body’s main source of energy. Your body also needs carbohydrates to feed the brain and red blood cells and to protect against muscle loss. A balanced diet with carbohydrates from healthy sources (fruits, vegetables, whole grains, legumes and low-fat dairy products) is best. If you are trying to lose weight, cutting back on your portion sizes and calories is more effective than cutting out entire food groups.`,
+		},
+		{
+			question: "How do I know how many carbs to eat?",
+			answer: `The amount of carbs you should eat depends on your age, activity level, diabetes medicines and other medical conditions. Your healthcare provider or a registered dietitian can help you determine the right amount for you. Carbohydrate counting or consistent carbohydrate meal plans are the most common meal planning techniques used to help keep blood glucose levels within target range.`,
+		},
+		{
+			question: "Do I need to take vitamins or supplements?",
+			answer: `Most people with diabetes can get the nutrients they need through a healthy, balanced diet. There is no clear evidence that vitamin or mineral supplements improve blood sugar control. If you have a deficiency, your doctor may suggest a supplement. Do not take any supplements without talking to your provider, as some may interact with your medications or cause other problems.`,
+		},
+		{
+			question: "Can stress affect my blood sugar?",
+			answer: `Yes. When you are stressed, your body releases hormones that can cause blood sugar to rise. This is especially true in people with type 2 diabetes. Learning stress management techniques like deep breathing, yoga, meditation or talking with a counselor can help reduce stress and may improve your blood glucose control.`,
+		},
+		{
+			question: "How often should I check my blood sugar?",
+			answer: `This depends on your type of diabetes, your treatment plan, and your blood sugar goals. People who take insulin may need to check more often (before meals and at bedtime). Those managing with diet and exercise or oral medications may check less often. Your provider will recommend how often you should test and what your target range should be.`,
+		},
+		{
+			question: "What should I do if my blood sugar is too high?",
+			answer: `If your blood sugar is consistently high, review your diet, physical activity and medications. Make sure you are taking medications as prescribed, eating healthy, and being active. Drink water to help flush out excess sugar, and consider light activity like walking. Contact your healthcare provider if your levels stay high or if you are not feeling well.`,
+		},
+		{
+			question: "What should I do if my blood sugar is too low?",
+			answer: `Low blood sugar (hypoglycemia) can be dangerous. If your blood sugar is below 70 mg/dL, eat or drink 15 grams of fast-acting carbs (such as glucose tablets, juice, or regular soda). Recheck your blood sugar after 15 minutes and repeat if it is still low. Always carry a quick source of sugar and talk to your doctor about how to prevent lows.`,
+		},
+		{
+			question: "Do I have to stop eating my favorite foods?",
+			answer: `No! You can still enjoy your favorite foods in moderation. The key is to plan ahead, watch portion sizes, and balance your meals. Working with a dietitian can help you fit your favorite foods into a healthy meal plan.`,
+		},
+		{
+			question: "What is the best way to prevent complications?",
+			answer: `The best way to prevent complications is to keep your blood sugar, blood pressure, and cholesterol in your target ranges. Eat healthy, stay active, take medications as prescribed, manage stress, and avoid smoking. Regular checkups and monitoring can help catch problems early. Managing your diabetes every day may seem hard, but it makes a huge difference in your long-term health.`,
+		},
+	],
+};
