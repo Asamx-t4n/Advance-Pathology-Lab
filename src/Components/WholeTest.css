@@ -69,32 +69,44 @@
 .WholeTest-Button-List {
 	margin-top: 2rem;
 	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* center the column */
+	gap: 0.8rem; /* space between buttons */
 }
-.WholeTest-Button {
-	border-radius: 25%;
-	margin-top: 1rem;
-	height: 2rem;
-	width: 20rem;
-}
+
 .WholeTest-Button-Link {
+	display: block; /* Full width clickable */
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	border-radius: 25%;
+	background-color: #f0f0f0;
 	color: black;
 	text-decoration: none;
 	font-size: 0.8rem;
 	font-weight: 600;
-	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+	transition: all 0.3s ease;
 }
+
 .WholeTest-Button-Link.active {
 	color: black;
 	font-size: 0.9rem;
 	font-weight: 800;
-	transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+	background-color: #d1e7ff;
 }
+
+.WholeTest-Button-Link:hover {
+	background-color: #e0e0e0;
+}
+
 .Other-Test {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
 	font-weight: 600;
+	margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -113,30 +125,24 @@
 		font-size: 0.8rem;
 		font-weight: 600;
 	}
-	.WholeTest-Button {
-		border-radius: 25%;
-		margin-top: 1rem;
-		height: 2rem;
-		width: 14rem;
-	}
-	.WholeTest-Button-Link {
-		color: black;
-		text-decoration: none;
-		font-size: 0.7rem;
-		font-weight: 600;
-		transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
-	}
-	.WholeTest-Button-Link.active {
-		color: black;
-		font-size: 0.7rem;
-		font-weight: 800;
-		transition: color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
-	}
+
 	.WholeTest-Title {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-size: 0.7rem;
 		font-weight: 800;
+	}
+	.WholeTest-Button {
+		width: 90%;
+		font-size: 0.75rem;
+	}
+
+	.WholeTest-Button-Link {
+		font-size: 0.75rem;
+	}
+
+	.WholeTest-Button-Link.active {
+		font-size: 0.8rem;
 	}
 }

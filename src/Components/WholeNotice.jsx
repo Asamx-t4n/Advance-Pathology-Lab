@@ -33,12 +33,12 @@ const WholeNotice = () => {
 				<div className="container-fluid">
 					<div className="row">
 						<div className="WholeNotice-Button-Div">
-							<button onClick={NextNotice} className="WholeNotice-Button">
+							<div onClick={NextNotice} className="WholeNotice-Link">
 								Next Notice
-							</button>
-							<button onClick={BackNotice} className="WholeNotice-Button">
+							</div>
+							<div onClick={BackNotice} className="WholeNotice-Link">
 								Back
-							</button>
+							</div>
 						</div>
 					</div>
 				</div>

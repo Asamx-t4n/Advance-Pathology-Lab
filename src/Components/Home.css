@@ -337,7 +337,31 @@
 	color: blue !important;
 	display: flex !important;
 }
+/* For Appoinment */
+.BooKATest-Animation {
+	position: fixed;
+	top: 0;
+	left: 0;
 
+	opacity: 0;
+	transform: translateY(20px);
+	background: rgba(0, 0, 0, 0.6); /* transparent black background */
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	z-index: 999;
+}
+
+.BooKATest-Animation.add {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 1;
+	transform: translateY(0);
+	backdrop-filter: blur(6px); /* optional blur for effect */
+	z-index: 9999;
+}
 /* Make it responsive */
 @media (max-width: 768px) {
 	.service-info {

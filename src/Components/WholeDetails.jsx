@@ -76,66 +76,60 @@ const WholeDetails = () => {
 				<div className="col-md-4 sticky-top">
 					<div className="Buttons-div sticky-top">
 						<h2 className="W-More-Service">More Services</h2>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${1}`}
-							>
-								Clinical chemistry
-							</NavLink>
-						</button>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${2}`}
-							>
-								Hematology
-							</NavLink>
-						</button>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${3}`}
-							>
-								Histopathology
-							</NavLink>
-						</button>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${4}`}
-							>
-								Microbiology and Serology
-							</NavLink>
-						</button>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${5}`}
-							>
-								Immunology
-							</NavLink>
-						</button>
-						<button className="WholeDetails-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "W-Buttons active" : "W-Buttons"
-								}
-								to={`/details/${6}`}
-							>
-								Cytopathology
-							</NavLink>
-						</button>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/1"
+						>
+							Clinical Chemistry
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/2"
+						>
+							Hematology
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/3"
+						>
+							Histopathology
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/4"
+						>
+							Microbiology and Serology
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/5"
+						>
+							Immunology
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive ? "W-Buttons active" : "W-Buttons"
+							}
+							to="/details/6"
+						>
+							Cytopathology
+						</NavLink>
 					</div>
 				</div>
 			</div>

@@ -18,6 +18,8 @@ import { FaHospitalAlt } from "react-icons/fa";
 import { GrDocumentTest } from "react-icons/gr";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa";
+import { useState } from "react";
+import BookTest from "./BookTest";
 
 export default function Home() {
 	// ✅ Full-width single slider (Hero banner, etc.)
@@ -137,6 +139,7 @@ export default function Home() {
 			},
 		],
 	};
+	const [showForm, setShowForm] = useState(false);
 
 	return (
 		<div className="container HOME">
@@ -217,7 +220,10 @@ export default function Home() {
 					<div className="col-md-4 Certificate-bookHome">
 						<h1 className="Uploads-Report">Your Reports</h1>
 						<div className="Uploads">
-							<button className="UTbutton1">
+							<button
+								className="UTbutton1"
+								onClick={() => setShowForm(!showForm)}
+							>
 								<PiTestTubeDuotone />
 								<p className="UTbutton1-cap">Book a test</p>
 							</button>
@@ -229,6 +235,10 @@ export default function Home() {
 								<FaFileDownload />
 								<p className="UTbutton1-cap">Download Reports</p>
 							</button>
+						</div>
+
+						<div className={`BooKATest-Animation ${showForm ? "add" : ""}`}>
+							{showForm && <BookTest setShowForm={setShowForm} />}
 						</div>
 					</div>
 					<div className="col-md-4 Certificate-bookHome">

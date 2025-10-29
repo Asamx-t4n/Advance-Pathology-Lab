@@ -45,45 +45,74 @@ const WholeDetails = () => {
 					</div>
 				</div>
 				<div className="col-md-4 sticky-top">
-					<div className="WholeTest-Button-List sticky-top ">
+					<div className="WholeTest-Button-List sticky-top">
 						<h1 className="Other-Test">Other Tests</h1>
-						<button className="WholeTest-Button">
-							<NavLink className="WholeTest-Button-Link" k to={`/test/${1}`}>
-								Comprehensive Health Check
-							</NavLink>
-						</button>
-						<button className="WholeTest-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive
-										? "WholeTest-Button-Link active"
-										: "WholeTest-Button-Link"
-								}
-								to={`/test/${2}`}
-							>
-								Cancer Screening Male
-							</NavLink>
-						</button>
-						<button className="WholeTest-Button">
-							<NavLink className="WholeTest-Button-Link" to={`/test/${3}`}>
-								Diabetes Health Check up
-							</NavLink>
-						</button>
-						<button className="WholeTest-Button">
-							<NavLink className="WholeTest-Button-Link" to={`/test/${4}`}>
-								Advance Health Check up
-							</NavLink>
-						</button>
-						<button className="WholeTest-Button">
-							<NavLink className="WholeTest-Button-Link" to={`/test/${5}`}>
-								Cancer screening profile-female
-							</NavLink>
-						</button>
-						<button className="WholeTest-Button">
-							<NavLink className="WholeTest-Button-Link" to={`/test/${6}`}>
-								Fever Package
-							</NavLink>
-						</button>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/1`}
+						>
+							Comprehensive Health Check
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/2`}
+						>
+							Cancer Screening Male
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/3`}
+						>
+							Diabetes Health Check up
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/4`}
+						>
+							Advance Health Check up
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/5`}
+						>
+							Cancer screening profile-female
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeTest-Button-Link active"
+									: "WholeTest-Button-Link"
+							}
+							to={`/test/6`}
+						>
+							Fever Package
+						</NavLink>
 					</div>
 				</div>
 			</div>

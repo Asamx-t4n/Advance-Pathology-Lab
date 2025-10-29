@@ -45,40 +45,63 @@ const WholeNews = () => {
 				</div>
 
 				<div className="col-md-4 col-sm-12">
-					<div className="WholeNews-Button-List sticky-top ">
+					<div className="WholeNews-Button-List sticky-top">
 						<h1 className="Other-News">Other News</h1>
-						<button className="WholeNews-Button">
-							<NavLink className="WholeNews-Button-Link" to={`/News/${1}`}>
-								Automated Sperm Quality Analyser
-							</NavLink>
-						</button>
-						<button className="WholeNews-Button">
-							<NavLink
-								className={({ isActive }) =>
-									isActive
-										? "WholeNews-Button-Link active"
-										: "WholeNews-Button-Link"
-								}
-								to={`/News/${2}`}
-							>
-								WHO Ref. Evaluation
-							</NavLink>
-						</button>
-						<button className="WholeNews-Button">
-							<NavLink className="WholeNews-Button-Link" to={`/News/${3}`}>
-								SQA-IO
-							</NavLink>
-						</button>
-						<button className="WholeNews-Button">
-							<NavLink className="WholeNews-Button-Link" to={`/News/${4}`}>
-								Now we are accrediated by AERSSC Nepal
-							</NavLink>
-						</button>
-						<button className="WholeNews-Button">
-							<NavLink className="WholeNews-Button-Link" to={`/News/${5}`}>
-								Teej offer 2081
-							</NavLink>
-						</button>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeNews-Button-Link active"
+									: "WholeNews-Button-Link"
+							}
+							to="/news/1"
+						>
+							Automated Sperm Quality Analyser
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeNews-Button-Link active"
+									: "WholeNews-Button-Link"
+							}
+							to="/news/2"
+						>
+							WHO Ref. Evaluation
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeNews-Button-Link active"
+									: "WholeNews-Button-Link"
+							}
+							to="/news/3"
+						>
+							SQA-IO
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeNews-Button-Link active"
+									: "WholeNews-Button-Link"
+							}
+							to="/news/4"
+						>
+							Now we are accredited by AERSSC Nepal
+						</NavLink>
+
+						<NavLink
+							className={({ isActive }) =>
+								isActive
+									? "WholeNews-Button-Link active"
+									: "WholeNews-Button-Link"
+							}
+							to="/news/5"
+						>
+							Teej Offer 2081
+						</NavLink>
 					</div>
 				</div>
 			</div>
