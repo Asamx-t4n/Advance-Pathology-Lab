@@ -282,13 +282,17 @@ const About = () => {
 									{Item.question}
 								</p>
 								<CiSearch onClick={() => toggle(index)} />
-
-								{openIndex === index &&
-									Item.answer.map((ans, i) => (
-										<p className="Common-Ans" key={i}>
-											{ans}
-										</p>
+								<div
+									className={` Answer-Container ${
+										openIndex === index ? "open" : "close"
+									}`}
+								>
+									{Item.answer.map((ans, i) => (
+										<div className="Common-Ans">
+											<p key={i}>{ans}</p>
+										</div>
 									))}
+								</div>
 							</div>
 						))}
 					</div>

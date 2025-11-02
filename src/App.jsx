@@ -20,7 +20,7 @@ import WholeNotice from "./Components/WholeNotice";
 import Blogs from "./Components/Blogs";
 import FAQS from "./Components/FAQS";
 import Contact from "./Components/Contact";
-
+import UploadPrescription from "./Components/UploadPrescription";
 const App = () => {
 	const menuRef = useRef();
 	let scrollTimeOut;
@@ -135,6 +135,7 @@ const App = () => {
 					<Route path="/blogs" element={<Blogs />} />
 					<Route path="/faqs" element={<FAQS />} />
 					<Route path="/contacts" element={<Contact />} />
+					<Route path="/UploadPrescription" element={<UploadPrescription />} />
 				</Routes>
 			</div>
 			<div className="container-fluid Footer">

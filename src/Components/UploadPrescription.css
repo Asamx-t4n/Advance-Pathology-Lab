@@ -1,0 +1,64 @@
+.UploadPresciption {
+	margin-top: 1.5rem;
+	background-color: #ededed;
+	box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.1);
+}
+/* Tittle */
+.UploadPrescription-Title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 800;
+}
+/* Main Data */
+.UploadPrescription-FirstData,
+.UploadPrescription-SecondData,
+.UploadPrescription-ThirdData {
+	margin: 1.5rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.DataInput {
+	width: 15rem;
+	font-size: 0.8rem;
+}
+.UploadPrescription-DataName {
+	font-size: 0.8rem;
+	font-weight: 500;
+}
+.UploadPrescription-FirstData-first,
+.UploadPrescription-FirstData-Second,
+.UploadPrescription-SecondData-First,
+.UploadPrescription-SecondData-Second,
+.UploadPrescription-ThirdData-First,
+.UploadPrescription-ThirdData-Second {
+	display: flex;
+	flex-direction: column;
+}
+/* Button */
+.UploadPrescription-Button {
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	border-radius: 25%;
+	background-color: #f0f0f0;
+	color: black;
+	text-decoration: none;
+	font-size: 0.8rem;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+	.UploadPrescription-FirstData,
+	.UploadPrescription-SecondData,
+	.UploadPrescription-ThirdData {
+		margin: 1.5rem;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+	}
+}

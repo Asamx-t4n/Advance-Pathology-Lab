@@ -41,9 +41,10 @@ const Card = ({
 	BLOGS,
 	BCAP,
 	Date,
+	onClick,
 }) => {
 	return (
-		<div className={`Cards ${Size}`}>
+		<div className={`Cards ${Size}`} onClick={onClick}>
 			<div className="Card-img-div">
 				{src && <img className="Card-img" src={src} alt="IMG" />}
 			</div>

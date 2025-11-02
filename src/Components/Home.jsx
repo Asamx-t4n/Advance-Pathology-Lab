@@ -20,8 +20,10 @@ import { VscWorkspaceTrusted } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa";
 import { useState } from "react";
 import BookTest from "./BookTest";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+	const navigate = useNavigate();
 	// ✅ Full-width single slider (Hero banner, etc.)
 	var settings1 = {
 		dots: true,
@@ -227,7 +229,10 @@ export default function Home() {
 								<PiTestTubeDuotone />
 								<p className="UTbutton1-cap">Book a test</p>
 							</button>
-							<button className="UTbutton2">
+							<button
+								className="UTbutton2"
+								onClick={() => navigate("/UploadPrescription")}
+							>
 								<FaFileUpload />
 								<p className="UTbutton1-cap">Upload prescription</p>
 							</button>
@@ -323,7 +328,12 @@ export default function Home() {
 						</Slider>
 
 						<div className=" Our-Expert-Teams-btn-div">
-							<button className="Our-Expert-Teams-btn">View All</button>
+							<button
+								onClick={() => navigate("/Service")}
+								className="Our-Expert-Teams-btn"
+							>
+								View All
+							</button>
 						</div>
 					</div>
 				</div>
@@ -347,7 +357,12 @@ export default function Home() {
 						</Slider>
 					</div>
 					<div className=" Our-Expert-Teams-btn-div">
-						<button className="Our-Expert-Teams-btn">View All</button>
+						<button
+							onClick={() => navigate("/Test")}
+							className="Our-Expert-Teams-btn"
+						>
+							View All
+						</button>
 					</div>
 				</div>
 			</div>
@@ -371,7 +386,12 @@ export default function Home() {
 						</Slider>
 					</div>
 					<div className=" Our-Expert-Teams-btn-div">
-						<button className="Our-Expert-Teams-btn">View All</button>
+						<button
+							onClick={() => navigate("/Teams")}
+							className="Our-Expert-Teams-btn"
+						>
+							View All
+						</button>
 					</div>
 				</div>
 			</div>
@@ -465,6 +485,7 @@ export default function Home() {
 							BLOGS="Latest News & Tips"
 							BCAP="Total No. of Test And Panels"
 							btn="View Details"
+							onClick={() => navigate("/News")}
 						/>
 					</div>
 					<div className="col-md-4">
@@ -473,6 +494,7 @@ export default function Home() {
 							BLOGS="Blogs and Articles"
 							BCAP="Total No. of Test And Panels"
 							btn="View Details"
+							onClick={() => navigate("/blogs")}
 						/>
 					</div>
 					<div className="col-md-4">
@@ -481,6 +503,7 @@ export default function Home() {
 							BLOGS="A-P-L Videos"
 							BCAP="Total No. of Test And Panels"
 							btn="View Details"
+							onClick={() => navigate("/faqs")}
 						/>
 					</div>
 				</div>

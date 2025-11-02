@@ -136,12 +136,6 @@
 	margin: 0 0 10px 0;
 }
 
-.QUE-ICONS p {
-	margin: 8px 0;
-	line-height: 1.6;
-	font-size: 0.95rem;
-}
-
 .QUE-ICONS lord-icon {
 	margin-left: 5px;
 	vertical-align: middle;
@@ -151,7 +145,18 @@
 	font-weight: 500;
 	font-size: 0.8rem;
 }
-
+/* Question and Answer animation */
+.Answer-Container {
+	overflow: hidden;
+	max-height: 0rem;
+	opacity: 0;
+	transition: max-height 0.5s ease, opacity 0.8s ease;
+}
+.Answer-Container.open {
+	max-height: 500px;
+	opacity: 1;
+	transition: max-height 0.5s ease, opacity 0.5s ease;
+}
 @media (max-width: 768px) {
 	.about-img {
 		height: 250px;
