@@ -137,6 +137,82 @@ body {
 .F-location {
 	margin: 0.5rem;
 }
+/* color for navbar and footer */
+/* Navbar */
+.navbar {
+	background-color: #003d99; /* darker, subtle blue */
+}
+
+.nav-menu li a {
+	color: #f8f9fa; /* white text for menu links */
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+	color: #ffd166; /* golden accent on hover/active */
+}
+
+/* Hamburger icon */
+.Hum {
+	color: #f8f9fa; /* white hamburger icon */
+}
+
+/* Footer */
+.Footer {
+	background-color: #003d99; /* match darker navbar */
+	color: #f8f9fa; /* white text */
+}
+
+.F-About-Company,
+.F-Useful-Link,
+.F-Connect-Us,
+.F-Facebook-Page {
+	color: #ffd166; /* golden accent headings */
+}
+
+.F-About,
+.F-service-info-para,
+.F-NUM1,
+.F-location {
+	color: #f8f9fa; /* white text for all content */
+}
+
+/* Footer links hover effect */
+.F-Ul li:hover {
+	color: #ffd166; /* golden hover for list items */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+	.nav-menu {
+		background-color: rgba(
+			0,
+			61,
+			153,
+			0.9
+		); /* slightly transparent darker blue */
+	}
+
+	.Footer {
+		background-color: #003d99; /* darker blue for mobile footer */
+		color: #f8f9fa;
+	}
+
+	.F-About-Company,
+	.F-Useful-Link,
+	.F-Connect-Us,
+	.F-Facebook-Page {
+		color: #ffd166; /* golden headings */
+	}
+
+	.F-About,
+	.F-service-info-para,
+	.F-NUM1,
+	.F-location {
+		color: #f8f9fa; /* white text */
+	}
+}
+
 /* Responsive: mobile */
 @media screen and (max-width: 768px) {
 	.Hum {

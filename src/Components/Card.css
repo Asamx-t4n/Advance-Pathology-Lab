@@ -273,6 +273,65 @@
 .Cards.XSM .Card-button {
 	margin-left: 2.5rem;
 }
+/* Color Only */
+.Cards {
+	background-color: #ffffff; /* white background */
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* subtle shadow */
+	color: #333333; /* default text color */
+}
+
+.Cards:hover .Card-title {
+	color: #0052cc; /* blue on hover */
+}
+
+.Card-img {
+	border-radius: 15%;
+	background-color: #f5f5f5; /* light grey behind image */
+}
+
+.Card-title {
+	color: #222222; /* dark text */
+}
+
+.Card-description,
+.SCard-description {
+	color: #555555; /* medium grey text */
+}
+
+.NPRs,
+.Discount-price,
+.Original-price {
+	color: #d32f2f; /* red for prices */
+}
+
+.Card-button {
+	background-color: #0052cc; /* primary blue */
+	color: #ffffff; /* white text */
+}
+
+.Card-button:hover {
+	background-color: #003d99; /* darker blue on hover */
+}
+
+.Details1,
+.Details2,
+.Includes {
+	color: #007bff; /* blue for details and includes */
+}
+
+.Parameter,
+.Cards .EDU,
+.Cards .NMC,
+.Cards .XCAP,
+.Cards .BCAP,
+.BLOGS,
+.NUM,
+.PLUS {
+	color: #333333; /* neutral dark text */
+}
+
+/* Responsive adjustments remain the same; only colors updated */
+
 @media screen and (max-width: 768px) {
 	.Cards.Small .Card-title {
 		display: flex;

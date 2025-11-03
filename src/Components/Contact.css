@@ -20,3 +20,27 @@
 .Office-Icon {
 	margin-left: 0.5rem;
 }
+/* Only colour */
+.Contact {
+	background-color: #f9f9f9; /* lighter background */
+}
+
+.Office-Adress,
+.Office-Phone,
+.Office-Email,
+.Office-Follow {
+	color: #222222; /* dark text */
+}
+
+.Birtamode,
+.Number,
+.Email {
+	color: #555555; /* medium grey text */
+}
+
+.Office-Icon {
+	color: #0052cc; /* blue icons */
+}
+.Office-Icon:hover {
+	color: #003d99; /* darker blue on hover */
+}

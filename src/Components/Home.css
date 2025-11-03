@@ -362,6 +362,61 @@
 	backdrop-filter: blur(6px); /* optional blur for effect */
 	z-index: 9999;
 }
+/* only color */
+/* ===== Only Color Changes ===== */
+
+/* Headings / Titles */
+.Home-book-title,
+.Uploads-Report,
+.Certification,
+.SM-about-title,
+.Our-Service-Title,
+.Our-Expert-Teams-Title,
+.Choose-Health-Packages-Title,
+.Why-Advance-Pathology-lab-Title,
+.Extra-Information {
+	color: #0052cc; /* same deep blue as About page headings */
+	text-decoration-color: #0052cc; /* underline color match */
+}
+
+/* Paragraphs / small text */
+.Home-book-cap,
+.UTbutton1-cap,
+.UTbutton1 p,
+.UTbutton2 p,
+.UTbutton3 p,
+.SM-about-para p,
+.Cutomer-Rate,
+.Google-rate,
+.Trusted-By {
+	color: #333333; /* same dark grey as About page text */
+}
+
+/* Buttons */
+.Book-now-btn,
+.Our-Expert-Teams-btn,
+.UTbutton1,
+.UTbutton2,
+.UTbutton3 {
+	background-color: #0052cc; /* primary blue like About page */
+	color: #ffffff; /* white text */
+}
+
+.Book-now-btn:hover,
+.Our-Expert-Teams-btn:hover,
+.UTbutton1:hover,
+.UTbutton2:hover,
+.UTbutton3:hover {
+	background-color: #0041a8; /* darker blue on hover like About page */
+}
+
+/* Icons (if any) */
+.Book-Home-Collection-Icon,
+.Mission-Vision-Icon,
+.QUE-ICONS svg {
+	color: #ff9900; /* warm accent gold like About page icons */
+}
+
 /* Make it responsive */
 @media (max-width: 768px) {
 	.service-info {

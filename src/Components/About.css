@@ -157,6 +157,63 @@
 	opacity: 1;
 	transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+/* Only color */
+/* Headings */
+.About-Title,
+.Our-Mission-Title,
+.Our-Vision-Title,
+.EXTERNAL-QUALITY-TITLE {
+	color: #0052cc; /* deep blue for all headings */
+}
+
+/* Paragraphs */
+.About-para-div p,
+.Our-Mission-Para,
+.Our-Vision-Para,
+.Our-Motto-Para,
+.EXTERNAL-QUALITY-PROGRAMS p,
+.Common-Ans p {
+	color: #333333; /* dark grey for text readability */
+}
+
+/* Icons */
+.Mission-Vision-Icon,
+.QUE-ICONS svg {
+	color: #ff9900; /* warm accent gold */
+}
+
+/* FAQ Questions */
+.QUE-LIST {
+	color: #0052cc; /* heading blue for questions */
+}
+
+/* Backgrounds */
+.About-section {
+	background-color: #f8f9fa; /* light grey section background */
+}
+
+.Mission-Vision {
+	background-color: #ffffff; /* keep white for clarity */
+}
+
+.EXTERNAL-QUALITY {
+	background-color: #e6f0ff; /* soft blue highlight */
+}
+
+/* Buttons (if any added later) */
+.Tbutton1,
+.Tbutton2,
+.Tbutton3 {
+	background-color: #0052cc; /* primary blue button */
+	color: #ffffff; /* white text */
+}
+
+.Tbutton1:hover,
+.Tbutton2:hover,
+.Tbutton3:hover {
+	background-color: #0041a8; /* darker blue on hover */
+}
+
 @media (max-width: 768px) {
 	.about-img {
 		height: 250px;

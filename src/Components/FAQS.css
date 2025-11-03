@@ -38,3 +38,23 @@
 	opacity: 1;
 	transition: max-height 0.5s ease, opacity 0.5s ease;
 }
+/* Only color */
+.FAQS-QA {
+	background-color: #f9f9f9; /* light background */
+}
+
+.FAQS-QA-Title {
+	color: #222222; /* dark heading */
+}
+
+.FAQS-Q {
+	color: #0052cc; /* question text */
+}
+
+.FAQS-Icons {
+	color: #0052cc; /* icon color */
+}
+
+.FAQS-A {
+	color: #555555; /* answer text */
+}
